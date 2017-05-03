@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_FightMusic" ID="{CD7F8872-14BF-458F-9CDB-D868C50D7CFA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{872AB862-A828-44CC-94AB-0F7641E3F266}" ShortID="641580963" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{55CFFA66-F3D7-4362-81B2-1BD511AC7C07}" Global="false">
+									<ObjectRef Name="FightMusic" ID="{EE0F5767-6F32-4245-A824-8E8B2E64C15A}" WorkUnitID="{9B222E70-3A7B-4D5F-BFC8-0E1857391669}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_HumanTalk" ID="{8729075E-AE87-4863-A792-9746EBB6A62A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{24B9CFA5-CAE3-4846-8E7F-22BBE978DBE9}" ShortID="943072453" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1E6E2277-5D25-4C48-93AA-E5D2BC5228C3}" Global="false">
+									<ObjectRef Name="HumanTalk" ID="{072B2D36-9211-4E3D-8F6D-F9281FC04D6C}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KappaTalk" ID="{FB78A62F-5BD2-44DD-BB32-75B614DD7184}">
+					<ChildrenList>
+						<Action Name="Play" ID="{D76D3508-E754-4D94-8AC7-F8B45C327699}" ShortID="306319228" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{BD8BA1EA-8AA2-46A1-8970-D4ED5731CD3A}" Global="false">
+									<ObjectRef Name="KappaTalk" ID="{F7F5E34E-0964-472C-A762-0D9E2B171638}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MummyTalk" ID="{F54898A7-10A5-415E-AA14-9821FCE4E829}">
+					<ChildrenList>
+						<Action Name="Play" ID="{83146388-801A-4FB3-A380-D218B0B689DD}" ShortID="890989975" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3F602597-9366-4218-834E-1C4C687DB7B0}" Global="false">
+									<ObjectRef Name="MummyTalk" ID="{D7C44152-A0FF-405B-8E40-90BB5514BC39}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SirenTalk" ID="{1345DCD8-948F-4360-BBE9-E514FEF3A30D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{30A2C59E-2DDD-4B72-83AC-CC946ACE335F}" ShortID="360380902" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{EACB9937-F046-4A6A-A09A-7BCD17A22D91}" Global="false">
+									<ObjectRef Name="SirenTalk" ID="{6AA4A667-03DB-48AF-902E-C7991964EB06}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SlimeTalk" ID="{C06467FB-015C-4895-869D-F9174A53F4F5}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8B45A488-8FEE-4A90-A191-93E4A1C71346}" ShortID="778482052" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D8A2F2EA-2783-46D3-B16B-F02755B7EBC0}" Global="false">
+									<ObjectRef Name="SlimeTalk" ID="{E9BCE05A-1BB6-4120-99C7-716A7FC91F0D}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
