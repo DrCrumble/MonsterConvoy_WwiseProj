@@ -29,6 +29,22 @@
 							<ObjectRef Name="Play_SlimeTalk" ID="{C06467FB-015C-4895-869D-F9174A53F4F5}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="1" Y="4"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_SirenFear" ID="{E1627DCF-4F8A-41F2-8753-EE3630B7EB14}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_KappaFear" ID="{FCCFB25C-7D4F-466E-AFB8-C11AD78F0687}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SlimeFear" ID="{AF22B1C9-6382-4722-9E6A-BFED27F7A0A4}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Hits" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -74,7 +90,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="T4" ID="{16485E72-F444-4BFC-9504-D280E8872D93}"/>
+						<CurrentSwitchRef Name="T1" ID="{26E97B99-A16F-4656-A704-466D0F9DC2C1}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

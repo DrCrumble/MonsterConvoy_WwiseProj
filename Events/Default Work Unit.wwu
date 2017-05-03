@@ -69,6 +69,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Hits" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7DB053A9-4DC7-462B-BF64-09931CE6493F}" ShortID="547136807" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3BF7B7B1-A7F6-4C60-A9A6-27DAD8E76A99}" Global="false">
+									<ObjectRef Name="Hits" ID="{C197DD68-E7F0-4933-ACF7-E87F60B3AFBB}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KappaFear" ID="{FCCFB25C-7D4F-466E-AFB8-C11AD78F0687}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7776A598-B17E-439D-8218-3EF13D79A59B}" ShortID="637384680" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{7FD60D57-8351-42F4-A6BF-3CEAB5F66FD3}" Global="false">
+									<ObjectRef Name="KappaFear" ID="{94F77CE4-6431-4587-8D51-C51CE8131544}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SlimeFear" ID="{AF22B1C9-6382-4722-9E6A-BFED27F7A0A4}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5DFEBD0E-5480-4C6E-8D23-9A03C90F7AFC}" ShortID="346169834" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{446F0897-7FC1-4A23-8DE1-5777134A5F89}" Global="false">
+									<ObjectRef Name="SlimeFear" ID="{1CE788E4-B37A-4D9E-B57D-8953C5BC4F43}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SirenFear" ID="{E1627DCF-4F8A-41F2-8753-EE3630B7EB14}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7378C7BC-5DFC-4208-897D-A8C809E4599C}" ShortID="929511236" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{05496C26-7A34-4807-9095-68FEEE264DFC}" Global="false">
+									<ObjectRef Name="SirenFear" ID="{087875E8-D7C1-4951-B7EC-982C4CDC2464}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
