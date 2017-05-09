@@ -113,6 +113,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_GoatFear" ID="{0F0F0544-CEDD-4DEE-8EDF-E77092AD1E90}">
+					<ChildrenList>
+						<Action Name="Play" ID="{5558DE58-D8E6-4D88-81CE-D483F1DC63F0}" ShortID="921861683" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D8DA0E13-9DB0-45A3-8EEE-0ADFE34929DE}" Global="false">
+									<ObjectRef Name="GoatFear" ID="{F0A4E5A7-C37A-47CB-9DF2-C78DB09F71FD}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SpiderFear" ID="{B3AAB80F-8CED-4416-980D-027E5C650669}">
+					<ChildrenList>
+						<Action Name="Play" ID="{60ABFE4E-8D27-4596-85D7-F38D411B61AE}" ShortID="146466278" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{38417D93-FE2A-4B7F-B3AF-2CFF9A9C710E}" Global="false">
+									<ObjectRef Name="SpiderFear" ID="{BF9A5C77-3443-4F66-8CEE-3218F995516C}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GoatTalk" ID="{34718BBC-6FCF-4C32-BD4E-6D9F04EAE2E8}">
+					<ChildrenList>
+						<Action Name="Play" ID="{27A0DB12-0B5F-4383-B34E-B5F731CA5493}" ShortID="108418950" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{220314E0-0648-493D-954F-EC86C9260C5C}" Global="false">
+									<ObjectRef Name="GoatTalk" ID="{28D285A9-4F60-4342-8B6E-15DEB9A481E1}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SpiderTalk" ID="{FF3125F1-2E11-46A1-9B27-6FFF49095603}">
+					<ChildrenList>
+						<Action Name="Play" ID="{DA65EB2B-58B4-4B47-8688-94C938C6C173}" ShortID="660020240" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{41F809AB-59E9-48A5-97C7-515964B2D813}" Global="false">
+									<ObjectRef Name="SpiderTalk" ID="{124DE200-0E4E-4BC6-8FE1-F16B63D7A796}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

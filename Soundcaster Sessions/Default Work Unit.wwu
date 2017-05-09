@@ -30,6 +30,14 @@
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_GoatTalk" ID="{34718BBC-6FCF-4C32-BD4E-6D9F04EAE2E8}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SpiderTalk" ID="{FF3125F1-2E11-46A1-9B27-6FFF49095603}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="1" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_SirenFear" ID="{E1627DCF-4F8A-41F2-8753-EE3630B7EB14}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="2" Y="1"/>
 						</Module>
@@ -40,6 +48,14 @@
 						<Module>
 							<ObjectRef Name="Play_SlimeFear" ID="{AF22B1C9-6382-4722-9E6A-BFED27F7A0A4}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="2" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_GoatFear" ID="{0F0F0544-CEDD-4DEE-8EDF-E77092AD1E90}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SpiderFear" ID="{B3AAB80F-8CED-4416-980D-027E5C650669}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="2" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Hits" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
@@ -90,7 +106,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="T1" ID="{26E97B99-A16F-4656-A704-466D0F9DC2C1}"/>
+						<CurrentSwitchRef Name="T4" ID="{16485E72-F444-4BFC-9504-D280E8872D93}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
