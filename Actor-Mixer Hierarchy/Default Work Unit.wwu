@@ -22,41 +22,26 @@
 						<ActiveSource Name="Humain04_02" ID="{691E7B5C-98AF-4CF2-815A-350D196B29A5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<RandomSequenceContainer Name="New Random Container" ID="{F9EE4E1C-BCEC-47C2-8B52-2839AE0324BB}" ShortID="902244674">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-						</Reference>
-					</ReferenceList>
-				</RandomSequenceContainer>
 				<Folder Name="Talk" ID="{BCCEAF01-4327-4275-9EEE-EF2FA29E6C55}" ShortID="1010978338">
 					<ChildrenList>
-						<RandomSequenceContainer Name="HumanTalk" ID="{072B2D36-9211-4E3D-8F6D-F9281FC04D6C}" ShortID="780608029">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						<ActorMixer Name="TalkMix" ID="{9AFEABE3-9CD2-400D-8661-2D928E081C11}" ShortID="550699777">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+									<ObjectRef Name="MonsterSFX" ID="{AA525740-3F86-49B7-BD0C-F2D89E710120}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="HumainTalk" ID="{96E112CC-0AC1-4386-AC54-EE854F72BDB8}" ShortID="645310503" Type="SoundFX">
+								<RandomSequenceContainer Name="DemonTalk" ID="{9CAEC026-6834-4F0F-88D1-64C278B72A62}" ShortID="342792741">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -66,16 +51,123 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HumainTalk" ID="{611156B6-07F5-4BAC-A5CB-924415CACC76}" ShortID="767883496">
-											<Language>SFX</Language>
-											<AudioFile>HumainTalk.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="DemonTalk" ID="{CA8614F9-0C19-4239-ACA2-1EB1558922B0}" ShortID="889624876" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DemonTalk" ID="{5E1C5B00-E591-4AEA-9C18-2D998008548C}" ShortID="627672264">
+													<Language>SFX</Language>
+													<AudioFile>DemonTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DemonTalk" ID="{5E1C5B00-E591-4AEA-9C18-2D998008548C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DemonTalk-001" ID="{F2E02044-C182-45E2-A149-2D3A5710DAB0}" ShortID="755586662" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DemonTalk-001" ID="{361AAB31-3340-43DB-8111-6333E182146F}" ShortID="480870316">
+													<Language>SFX</Language>
+													<AudioFile>DemonTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DemonTalk-001" ID="{361AAB31-3340-43DB-8111-6333E182146F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DemonTalk-002" ID="{33A2D5F3-E0B2-4169-91EF-86608E4DBFEE}" ShortID="10851824" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DemonTalk-002" ID="{EF51EF6A-8DD4-4D02-B338-B4A61EF2B1D7}" ShortID="904899826">
+													<Language>SFX</Language>
+													<AudioFile>DemonTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DemonTalk-002" ID="{EF51EF6A-8DD4-4D02-B338-B4A61EF2B1D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DemonTalk-003" ID="{0585F6C2-945F-40AE-9474-3309DDC45279}" ShortID="438140082" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DemonTalk-003" ID="{7AC987AA-B43F-44D7-8F4D-A9812CA46418}" ShortID="427116168">
+													<Language>SFX</Language>
+													<AudioFile>DemonTalk-003.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DemonTalk-003" ID="{7AC987AA-B43F-44D7-8F4D-A9812CA46418}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DemonTalk-004" ID="{DE39D48F-F0DD-453A-A31F-60F8D1D7570B}" ShortID="428371480" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DemonTalk-004" ID="{185D7C2E-1A9D-4E5E-8050-B289C302E9E7}" ShortID="845180642">
+													<Language>SFX</Language>
+													<AudioFile>DemonTalk-004.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DemonTalk-004" ID="{185D7C2E-1A9D-4E5E-8050-B289C302E9E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DemonTalk-005" ID="{B44F51BD-18E7-4D1C-84B6-103F991DFB2F}" ShortID="915642357" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DemonTalk-005" ID="{FD105564-E6A1-497F-A525-85C1593BFD21}" ShortID="460091857">
+													<Language>SFX</Language>
+													<AudioFile>DemonTalk-005.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DemonTalk-005" ID="{FD105564-E6A1-497F-A525-85C1593BFD21}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HumainTalk" ID="{611156B6-07F5-4BAC-A5CB-924415CACC76}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HumainTalk-001" ID="{04134796-2213-4618-9611-FC3D2BFD5670}" ShortID="708056764" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FishTalk" ID="{32948BBA-4AF3-40CA-A5B1-39E338415566}" ShortID="637300198">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -85,16 +177,73 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HumainTalk-001" ID="{D2EE579A-9788-41F3-BD36-078AF3DA3447}" ShortID="158970289">
-											<Language>SFX</Language>
-											<AudioFile>HumainTalk-001.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="FishTalk" ID="{181A1297-9F26-477E-9581-DF9825674CDC}" ShortID="686298853" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FishTalk" ID="{DD28656F-6DF2-4DE4-9E3E-2F9702D8DE7C}" ShortID="244477400">
+													<Language>SFX</Language>
+													<AudioFile>FishTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FishTalk" ID="{DD28656F-6DF2-4DE4-9E3E-2F9702D8DE7C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FishTalk-001" ID="{4CC084DE-EB5E-417D-8140-E0C370F2B561}" ShortID="204919741" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FishTalk-001" ID="{CCB1D2EB-7E8F-497E-B426-AEAE838AF8F8}" ShortID="89208008">
+													<Language>SFX</Language>
+													<AudioFile>FishTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FishTalk-001" ID="{CCB1D2EB-7E8F-497E-B426-AEAE838AF8F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="FishTalk-002" ID="{0A6AF5A6-2F99-437A-AB80-992C799F5F9C}" ShortID="299269144" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="FishTalk-002" ID="{2B7A908E-4A63-44D4-BDDF-635E18BC3924}" ShortID="668055001">
+													<Language>SFX</Language>
+													<AudioFile>FishTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="FishTalk-002" ID="{2B7A908E-4A63-44D4-BDDF-635E18BC3924}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HumainTalk-001" ID="{D2EE579A-9788-41F3-BD36-078AF3DA3447}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HumainTalk-002" ID="{55123B70-FAD9-478D-9DA3-22B279A4BB97}" ShortID="729221911" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="GhostTalk" ID="{DC262EF4-1ACA-40D7-BE79-AABFF57EC1D6}" ShortID="259580916">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -104,16 +253,73 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HumainTalk-002" ID="{52D66AD9-76CE-4D5B-AF9A-8613FB1D36D3}" ShortID="585269257">
-											<Language>SFX</Language>
-											<AudioFile>HumainTalk-002.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="GhostTalk" ID="{2FCA3916-B545-4173-91D0-1243B9D4D782}" ShortID="76483177" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GhostTalk" ID="{F6F68162-8A6E-4D8C-880E-18B5715F2155}" ShortID="365421706">
+													<Language>SFX</Language>
+													<AudioFile>GhostTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GhostTalk" ID="{F6F68162-8A6E-4D8C-880E-18B5715F2155}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GhostTalk-001" ID="{F0F58A4F-6EDB-4102-AF40-7A10135E00B7}" ShortID="1061140092" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GhostTalk-001" ID="{1B6A4DAB-D566-49FB-B096-84840266CB26}" ShortID="1015560854">
+													<Language>SFX</Language>
+													<AudioFile>GhostTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GhostTalk-001" ID="{1B6A4DAB-D566-49FB-B096-84840266CB26}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GhostTalk-002" ID="{1E775A4C-6FC2-4285-9CDF-0BBB0E5E8E8C}" ShortID="619357473" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GhostTalk-002" ID="{62B84C2D-8BBF-4204-8242-536B17CF1209}" ShortID="818004399">
+													<Language>SFX</Language>
+													<AudioFile>GhostTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GhostTalk-002" ID="{62B84C2D-8BBF-4204-8242-536B17CF1209}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HumainTalk-002" ID="{52D66AD9-76CE-4D5B-AF9A-8613FB1D36D3}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HumainTalk-003" ID="{8A0762CE-BC50-4E6E-AC06-D0168B72C3DE}" ShortID="759152234" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="GoatTalk" ID="{28D285A9-4F60-4342-8B6E-15DEB9A481E1}" ShortID="1055030539">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -123,16 +329,73 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HumainTalk-003" ID="{E2F6A63A-FE6E-4F59-9E8D-317967617A80}" ShortID="408738522">
-											<Language>SFX</Language>
-											<AudioFile>HumainTalk-003.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="GoatTalk1" ID="{38A112DC-71B9-41FC-9359-FE4003D01BE0}" ShortID="96162087" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoatTalk1" ID="{785A79EE-C362-489F-8200-DA10DCBD0701}" ShortID="793808539">
+													<Language>SFX</Language>
+													<AudioFile>GoatTalk1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoatTalk1" ID="{785A79EE-C362-489F-8200-DA10DCBD0701}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GoatTalk2" ID="{651E39B2-4A55-403E-AA18-8DCE1326821F}" ShortID="642425576" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoatTalk2" ID="{D98078A6-33A4-4B76-B50A-A31B40110CD2}" ShortID="514683755">
+													<Language>SFX</Language>
+													<AudioFile>GoatTalk2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoatTalk2" ID="{D98078A6-33A4-4B76-B50A-A31B40110CD2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GoatTalk3" ID="{E556A1D5-F662-4864-8BF7-8C169FA8A1A2}" ShortID="33503255" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoatTalk3" ID="{C7FBF399-E5C8-4D0B-A8E0-043C49FA17E8}" ShortID="754586333">
+													<Language>SFX</Language>
+													<AudioFile>GoatTalk3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoatTalk3" ID="{C7FBF399-E5C8-4D0B-A8E0-043C49FA17E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HumainTalk-003" ID="{E2F6A63A-FE6E-4F59-9E8D-317967617A80}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HumainTalk-004" ID="{E4F91B03-FC18-44B9-A603-9009C466CDC9}" ShortID="965433982" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="GoblinTalk" ID="{DEEA6A31-D5E2-4464-9B20-7C0221C105F9}" ShortID="967117144">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -142,16 +405,195 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HumainTalk-004" ID="{69FE50CF-2BBE-44FF-8881-221AD808420A}" ShortID="798709121">
-											<Language>SFX</Language>
-											<AudioFile>HumainTalk-004.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="GoblinTalk" ID="{F8AC19EA-BA48-43E4-BC1E-6862C2BAB4F6}" ShortID="348349350" Type="SoundFX">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoblinTalk" ID="{7F90B75C-58E4-4896-A3A2-63739399FEF6}" ShortID="640592045">
+													<Language>SFX</Language>
+													<AudioFile>GoblinTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoblinTalk" ID="{7F90B75C-58E4-4896-A3A2-63739399FEF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GoblinTalk-001" ID="{86ED6445-2AB9-4C79-9DE9-5051F3357137}" ShortID="784321636" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoblinTalk-001" ID="{0EDE6A6C-7402-4C9F-9744-7B4F2BC89B38}" ShortID="915291146">
+													<Language>SFX</Language>
+													<AudioFile>GoblinTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoblinTalk-001" ID="{0EDE6A6C-7402-4C9F-9744-7B4F2BC89B38}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GoblinTalk-002" ID="{47563778-DC24-4F6F-AA44-1F7C0DF40B53}" ShortID="668147996" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoblinTalk-002" ID="{4B4F2D4C-69B9-4BC8-A980-BF2128C4AF18}" ShortID="643102208">
+													<Language>SFX</Language>
+													<AudioFile>GoblinTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoblinTalk-002" ID="{4B4F2D4C-69B9-4BC8-A980-BF2128C4AF18}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HumainTalk-004" ID="{69FE50CF-2BBE-44FF-8881-221AD808420A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="HumainTalk-005" ID="{BBB97655-597F-4261-A9C9-C67068BBBC70}" ShortID="305167304" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="HumanTalk" ID="{072B2D36-9211-4E3D-8F6D-F9281FC04D6C}" ShortID="780608029">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="HumanSFX" ID="{3771893A-B55B-48C6-B3CC-5AC5C402FB44}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HumainTalk-001" ID="{04134796-2213-4618-9611-FC3D2BFD5670}" ShortID="708056764" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HumainTalk-001" ID="{D2EE579A-9788-41F3-BD36-078AF3DA3447}" ShortID="158970289">
+													<Language>SFX</Language>
+													<AudioFile>HumainTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HumainTalk-001" ID="{D2EE579A-9788-41F3-BD36-078AF3DA3447}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HumainTalk-002" ID="{55123B70-FAD9-478D-9DA3-22B279A4BB97}" ShortID="729221911" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HumainTalk-002" ID="{52D66AD9-76CE-4D5B-AF9A-8613FB1D36D3}" ShortID="585269257">
+													<Language>SFX</Language>
+													<AudioFile>HumainTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HumainTalk-002" ID="{52D66AD9-76CE-4D5B-AF9A-8613FB1D36D3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HumainTalk-003" ID="{8A0762CE-BC50-4E6E-AC06-D0168B72C3DE}" ShortID="759152234" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HumainTalk-003" ID="{E2F6A63A-FE6E-4F59-9E8D-317967617A80}" ShortID="408738522">
+													<Language>SFX</Language>
+													<AudioFile>HumainTalk-003.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HumainTalk-003" ID="{E2F6A63A-FE6E-4F59-9E8D-317967617A80}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HumainTalk-004" ID="{E4F91B03-FC18-44B9-A603-9009C466CDC9}" ShortID="965433982" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HumainTalk-004" ID="{69FE50CF-2BBE-44FF-8881-221AD808420A}" ShortID="798709121">
+													<Language>SFX</Language>
+													<AudioFile>HumainTalk-004.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HumainTalk-004" ID="{69FE50CF-2BBE-44FF-8881-221AD808420A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HumainTalk-005" ID="{BBB97655-597F-4261-A9C9-C67068BBBC70}" ShortID="305167304" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HumainTalk-005" ID="{6961B287-E44B-44A9-A309-9E902CDB8FDA}" ShortID="807846984">
+													<Language>SFX</Language>
+													<AudioFile>HumainTalk-005.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HumainTalk-005" ID="{6961B287-E44B-44A9-A309-9E902CDB8FDA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="KappaTalk" ID="{F7F5E34E-0964-472C-A762-0D9E2B171638}" ShortID="258731367">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -161,467 +603,795 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="HumainTalk-005" ID="{6961B287-E44B-44A9-A309-9E902CDB8FDA}" ShortID="807846984">
-											<Language>SFX</Language>
-											<AudioFile>HumainTalk-005.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="KappaTalk1" ID="{C5176ABC-B118-4AED-891E-945E58ECD00B}" ShortID="805843333" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="KappaTalk1" ID="{B7D62C5A-13F0-43B9-8D54-9ECBF90C2D80}" ShortID="563989306">
+													<Language>SFX</Language>
+													<AudioFile>KappaTalk1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="KappaTalk1" ID="{B7D62C5A-13F0-43B9-8D54-9ECBF90C2D80}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="KappaTalk2" ID="{EB312558-1B9C-405B-A57B-2872A8F8BFED}" ShortID="703280547" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="KappaTalk2" ID="{7EF46FFD-66B0-423B-9348-9BECAA3F8BB9}" ShortID="501869012">
+													<Language>SFX</Language>
+													<AudioFile>KappaTalk2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="KappaTalk2" ID="{7EF46FFD-66B0-423B-9348-9BECAA3F8BB9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="KappaTalk3" ID="{E9BF8572-F010-483D-9594-7CE66A014D0D}" ShortID="639660368" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="KappaTalk3" ID="{F3F9ACE0-D0C7-4BB3-A735-FF96121D0067}" ShortID="54661627">
+													<Language>SFX</Language>
+													<AudioFile>KappaTalk3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="KappaTalk3" ID="{F3F9ACE0-D0C7-4BB3-A735-FF96121D0067}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="HumainTalk-005" ID="{6961B287-E44B-44A9-A309-9E902CDB8FDA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="MimicTalk" ID="{32126F6B-1085-4746-92A0-958B877265D1}" ShortID="642069979">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="MimicTalk" ID="{BC8685EA-D679-472F-A754-0DB3894FA8C1}" ShortID="288734206" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MimicTalk" ID="{5734F091-F873-4A1A-A9F8-FCCBC8A08B9E}" ShortID="855494069">
+													<Language>SFX</Language>
+													<AudioFile>MimicTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MimicTalk" ID="{5734F091-F873-4A1A-A9F8-FCCBC8A08B9E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MimicTalk-001" ID="{4BAB8BDF-461A-4350-8D45-3626953EB5FC}" ShortID="994509988" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MimicTalk-001" ID="{D4E0128B-6CCA-4291-A1F2-B17A57843DA4}" ShortID="176549477">
+													<Language>SFX</Language>
+													<AudioFile>MimicTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MimicTalk-001" ID="{D4E0128B-6CCA-4291-A1F2-B17A57843DA4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MimicTalk-002" ID="{99980EE5-2EEB-4D4C-9792-0FF84E20BD3D}" ShortID="144469236" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MimicTalk-002" ID="{11DA5901-5194-4C0A-B0E4-0AFD0C36C17C}" ShortID="662297442">
+													<Language>SFX</Language>
+													<AudioFile>MimicTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MimicTalk-002" ID="{11DA5901-5194-4C0A-B0E4-0AFD0C36C17C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="MummyTalk" ID="{D7C44152-A0FF-405B-8E40-90BB5514BC39}" ShortID="423890488">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="MummyTalk1" ID="{B9B47D44-3EF4-4788-8FEE-FFE6F8E46C5B}" ShortID="502310666" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MummyTalk1" ID="{79085C0F-B1E8-4D24-86FE-B7F0859992A2}" ShortID="832980642">
+													<Language>SFX</Language>
+													<AudioFile>MummyTalk1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MummyTalk1" ID="{79085C0F-B1E8-4D24-86FE-B7F0859992A2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MummyTalk2" ID="{9BD8A80B-5EFF-4A6A-9CF6-B89170749426}" ShortID="411579296" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MummyTalk2" ID="{2729BDD8-841D-42D9-85F3-1D373481E08E}" ShortID="155148120">
+													<Language>SFX</Language>
+													<AudioFile>MummyTalk2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MummyTalk2" ID="{2729BDD8-841D-42D9-85F3-1D373481E08E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MummyTalk3" ID="{1C8D3525-C3C1-4FB3-A416-57EF6F6670C7}" ShortID="432744221" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MummyTalk3" ID="{7C212DB0-087C-46B0-A0A8-C892A051B45A}" ShortID="56329008">
+													<Language>SFX</Language>
+													<AudioFile>MummyTalk3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MummyTalk3" ID="{7C212DB0-087C-46B0-A0A8-C892A051B45A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MummyTalk4" ID="{2B0D3644-1D40-4D38-BD87-122CF2938AB1}" ShortID="893058817" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MummyTalk4" ID="{27F18056-3E14-439E-A133-596013AA4A98}" ShortID="3286680">
+													<Language>SFX</Language>
+													<AudioFile>MummyTalk4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MummyTalk4" ID="{27F18056-3E14-439E-A133-596013AA4A98}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="OctopusTalk" ID="{0518E0FA-8439-4C1E-BEC8-D541ACCEED02}" ShortID="789020159">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="OctopusTalk" ID="{A9EF327C-9461-4C13-85FE-7960E8618DA4}" ShortID="481986912" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OctopusTalk" ID="{72E62B34-31D7-4815-8850-0CAA4428C72E}" ShortID="848655303">
+													<Language>SFX</Language>
+													<AudioFile>OctopusTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OctopusTalk" ID="{72E62B34-31D7-4815-8850-0CAA4428C72E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OctopusTalk-001" ID="{D94B9DAF-C6F6-442B-BC29-A11C4283FED1}" ShortID="221682405" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OctopusTalk-001" ID="{5ACD77C4-6F74-455E-9E9D-795BE06243AE}" ShortID="128656818">
+													<Language>SFX</Language>
+													<AudioFile>OctopusTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OctopusTalk-001" ID="{5ACD77C4-6F74-455E-9E9D-795BE06243AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OctopusTalk-002" ID="{94B80E70-0B9C-454C-BCDE-0B1AA6906F39}" ShortID="590653292" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OctopusTalk-002" ID="{1F4388F4-2B3E-44A8-B824-134B37908F13}" ShortID="243622941">
+													<Language>SFX</Language>
+													<AudioFile>OctopusTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OctopusTalk-002" ID="{1F4388F4-2B3E-44A8-B824-134B37908F13}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="OctopusTalk-003" ID="{411750C7-5488-415C-B3CB-0EC44D3490ED}" ShortID="180736692" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="OctopusTalk-003" ID="{867FD7C2-ED6A-4821-8AAE-95AEE9478BA8}" ShortID="808357022">
+													<Language>SFX</Language>
+													<AudioFile>OctopusTalk-003.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="OctopusTalk-003" ID="{867FD7C2-ED6A-4821-8AAE-95AEE9478BA8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="PrinceTalk" ID="{E0DF7EE3-AC6E-4A32-8D3B-4ED9C711CCF2}" ShortID="19633962">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="PrinceTalk" ID="{E778AAC2-F3CC-4D61-B8F9-456DBE94C932}" ShortID="1047657418" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PrinceTalk" ID="{AC298790-394C-46CF-887A-9154DBB469B0}" ShortID="310172191">
+													<Language>SFX</Language>
+													<AudioFile>PrinceTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PrinceTalk" ID="{AC298790-394C-46CF-887A-9154DBB469B0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PrinceTalk-001" ID="{8EC9641F-73ED-496B-8E56-E7369F3F6F0A}" ShortID="935374576" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PrinceTalk-001" ID="{64AFEE8A-8D17-49EE-9A90-0C02CF50C4CE}" ShortID="627372687">
+													<Language>SFX</Language>
+													<AudioFile>PrinceTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PrinceTalk-001" ID="{64AFEE8A-8D17-49EE-9A90-0C02CF50C4CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PrinceTalk-002" ID="{9C1C876A-DDAB-42D9-AD0A-838E793E4BE7}" ShortID="100272956" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PrinceTalk-002" ID="{0D4C4023-EB0B-489C-A043-D276F471281C}" ShortID="102163552">
+													<Language>SFX</Language>
+													<AudioFile>PrinceTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PrinceTalk-002" ID="{0D4C4023-EB0B-489C-A043-D276F471281C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SirenTalk" ID="{6AA4A667-03DB-48AF-902E-C7991964EB06}" ShortID="389957642">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SirenTalk1" ID="{391DF61F-C49C-4B59-BEB3-42817B987746}" ShortID="888190972" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SirenTalk1" ID="{C028F29D-EA69-4245-BB93-206E1EB85627}" ShortID="156954174">
+													<Language>SFX</Language>
+													<AudioFile>SirenTalk1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SirenTalk1" ID="{C028F29D-EA69-4245-BB93-206E1EB85627}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SirenTalk2" ID="{DA67B3CF-EDD4-4F1B-8E1A-2C26A947E29C}" ShortID="557185078" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SirenTalk2" ID="{7C389A1D-5C50-45DD-8F41-164E25C1AAC8}" ShortID="973621276">
+													<Language>SFX</Language>
+													<AudioFile>SirenTalk2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SirenTalk2" ID="{7C389A1D-5C50-45DD-8F41-164E25C1AAC8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SirenTalk3" ID="{6F4CB812-7D6B-4998-9965-5AB1CB6B6B81}" ShortID="25681325" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SirenTalk3" ID="{D0EC24BB-96BE-4FCE-8134-411943145E50}" ShortID="891057738">
+													<Language>SFX</Language>
+													<AudioFile>SirenTalk3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SirenTalk3" ID="{D0EC24BB-96BE-4FCE-8134-411943145E50}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SlimeTalk" ID="{E9BCE05A-1BB6-4120-99C7-716A7FC91F0D}" ShortID="93662795">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>-11</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SlimeTalk" ID="{A85E7134-227E-47FC-BF6F-7A9886F4C2A7}" ShortID="235865654" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SlimeTalk" ID="{B1CDBBB0-3679-4211-9242-06486FAA44F2}" ShortID="353690852">
+													<Language>SFX</Language>
+													<AudioFile>SlimeTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SlimeTalk" ID="{B1CDBBB0-3679-4211-9242-06486FAA44F2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SlimeTalk3" ID="{02C4FE32-A35D-48CF-9427-5C3EA8FA7EA5}" ShortID="551742642" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SlimeTalk3" ID="{E625CFA5-38CC-4C55-BDDA-A1E7051DAA46}" ShortID="54533043">
+													<Language>SFX</Language>
+													<AudioFile>SlimeTalk3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SlimeTalk3" ID="{E625CFA5-38CC-4C55-BDDA-A1E7051DAA46}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SpiderTalk" ID="{124DE200-0E4E-4BC6-8FE1-F16B63D7A796}" ShortID="561672692">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SpiderTalk1" ID="{6D3F77F9-C6CB-464F-B025-44AF3E1FEBD1}" ShortID="212369566" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SpiderTalk1" ID="{E50D0CF4-8688-42C5-9551-0A855692C090}" ShortID="573102958">
+													<Language>SFX</Language>
+													<AudioFile>SpiderTalk1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SpiderTalk1" ID="{E50D0CF4-8688-42C5-9551-0A855692C090}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SpiderTalk2" ID="{A200A8B3-8E68-41A7-B810-80D2E179ACC9}" ShortID="855923949" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SpiderTalk2" ID="{BBC915CE-F863-46A0-94D0-65DB7E078E9C}" ShortID="496024955">
+													<Language>SFX</Language>
+													<AudioFile>SpiderTalk2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SpiderTalk2" ID="{BBC915CE-F863-46A0-94D0-65DB7E078E9C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SpiderTalk3" ID="{EFE84C96-EF17-4E7D-A324-D28D5E325DD5}" ShortID="582586094" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SpiderTalk3" ID="{E02AA132-9E18-424A-B00E-54F6D5A9FD8F}" ShortID="943150710">
+													<Language>SFX</Language>
+													<AudioFile>SpiderTalk3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SpiderTalk3" ID="{E02AA132-9E18-424A-B00E-54F6D5A9FD8F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VampireTalk" ID="{641F3565-473A-463E-B841-D923D4E0D16E}" ShortID="865794933">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VampireTalk" ID="{F34E7591-91BB-405E-9FCC-2C5DEDE5CA1C}" ShortID="893565149" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VampireTalk" ID="{F92093FE-B7BC-40FA-ADAD-5454692A48ED}" ShortID="456645199">
+													<Language>SFX</Language>
+													<AudioFile>VampireTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VampireTalk" ID="{F92093FE-B7BC-40FA-ADAD-5454692A48ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VampireTalk-001" ID="{B7325AFB-8AB2-49F3-8588-29909D2FC0F5}" ShortID="603008841" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VampireTalk-001" ID="{1457FA9E-FA3C-42F1-91A2-71CB11895325}" ShortID="280653598">
+													<Language>SFX</Language>
+													<AudioFile>VampireTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VampireTalk-001" ID="{1457FA9E-FA3C-42F1-91A2-71CB11895325}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VampireTalk-002" ID="{E932C8A5-3E00-4BFB-8AF4-2506695BF136}" ShortID="1068376843" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VampireTalk-002" ID="{CC479F21-6AD9-4A12-9A49-B242C4540078}" ShortID="833174961">
+													<Language>SFX</Language>
+													<AudioFile>VampireTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VampireTalk-002" ID="{CC479F21-6AD9-4A12-9A49-B242C4540078}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ZombieTalk" ID="{ECEF6BE5-4FA8-40E3-AED3-9EED665A1F24}" ShortID="1033492887">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="ZombieTalk" ID="{8EDF66B7-201F-4869-A039-368EC60DDC84}" ShortID="741858198" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ZombieTalk" ID="{9ACF3453-DA56-412B-BA79-0974D4795C3D}" ShortID="179710487">
+													<Language>SFX</Language>
+													<AudioFile>ZombieTalk.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ZombieTalk" ID="{9ACF3453-DA56-412B-BA79-0974D4795C3D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ZombieTalk-001" ID="{4519F818-6DB6-4D20-A5B2-AEA13C50E430}" ShortID="601730674" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ZombieTalk-001" ID="{3389A6E3-42D0-4B08-9491-2A61EE936F63}" ShortID="836991238">
+													<Language>SFX</Language>
+													<AudioFile>ZombieTalk-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ZombieTalk-001" ID="{3389A6E3-42D0-4B08-9491-2A61EE936F63}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="ZombieTalk-002" ID="{9C0F0C02-71E4-4347-A4C2-A015F26F65F6}" ShortID="758736754" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="ZombieTalk-002" ID="{C592E9F6-4D5C-493E-B732-2783DF61F2CE}" ShortID="513648910">
+													<Language>SFX</Language>
+													<AudioFile>ZombieTalk-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="ZombieTalk-002" ID="{C592E9F6-4D5C-493E-B732-2783DF61F2CE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="MummyTalk" ID="{D7C44152-A0FF-405B-8E40-90BB5514BC39}" ShortID="423890488">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="MummyTalk1" ID="{B9B47D44-3EF4-4788-8FEE-FFE6F8E46C5B}" ShortID="502310666" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MummyTalk1" ID="{79085C0F-B1E8-4D24-86FE-B7F0859992A2}" ShortID="832980642">
-											<Language>SFX</Language>
-											<AudioFile>MummyTalk1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MummyTalk1" ID="{79085C0F-B1E8-4D24-86FE-B7F0859992A2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MummyTalk2" ID="{9BD8A80B-5EFF-4A6A-9CF6-B89170749426}" ShortID="411579296" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MummyTalk2" ID="{2729BDD8-841D-42D9-85F3-1D373481E08E}" ShortID="155148120">
-											<Language>SFX</Language>
-											<AudioFile>MummyTalk2.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MummyTalk2" ID="{2729BDD8-841D-42D9-85F3-1D373481E08E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MummyTalk3" ID="{1C8D3525-C3C1-4FB3-A416-57EF6F6670C7}" ShortID="432744221" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MummyTalk3" ID="{7C212DB0-087C-46B0-A0A8-C892A051B45A}" ShortID="56329008">
-											<Language>SFX</Language>
-											<AudioFile>MummyTalk3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MummyTalk3" ID="{7C212DB0-087C-46B0-A0A8-C892A051B45A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="MummyTalk4" ID="{2B0D3644-1D40-4D38-BD87-122CF2938AB1}" ShortID="893058817" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="MummyTalk4" ID="{27F18056-3E14-439E-A133-596013AA4A98}" ShortID="3286680">
-											<Language>SFX</Language>
-											<AudioFile>MummyTalk4.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="MummyTalk4" ID="{27F18056-3E14-439E-A133-596013AA4A98}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="KappaTalk" ID="{F7F5E34E-0964-472C-A762-0D9E2B171638}" ShortID="258731367">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="KappaTalk1" ID="{C5176ABC-B118-4AED-891E-945E58ECD00B}" ShortID="805843333" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="KappaTalk1" ID="{B7D62C5A-13F0-43B9-8D54-9ECBF90C2D80}" ShortID="563989306">
-											<Language>SFX</Language>
-											<AudioFile>KappaTalk1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="KappaTalk1" ID="{B7D62C5A-13F0-43B9-8D54-9ECBF90C2D80}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="KappaTalk2" ID="{EB312558-1B9C-405B-A57B-2872A8F8BFED}" ShortID="703280547" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="KappaTalk2" ID="{7EF46FFD-66B0-423B-9348-9BECAA3F8BB9}" ShortID="501869012">
-											<Language>SFX</Language>
-											<AudioFile>KappaTalk2.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="KappaTalk2" ID="{7EF46FFD-66B0-423B-9348-9BECAA3F8BB9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="KappaTalk3" ID="{E9BF8572-F010-483D-9594-7CE66A014D0D}" ShortID="639660368" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="KappaTalk3" ID="{F3F9ACE0-D0C7-4BB3-A735-FF96121D0067}" ShortID="54661627">
-											<Language>SFX</Language>
-											<AudioFile>KappaTalk3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="KappaTalk3" ID="{F3F9ACE0-D0C7-4BB3-A735-FF96121D0067}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="SirenTalk" ID="{6AA4A667-03DB-48AF-902E-C7991964EB06}" ShortID="389957642">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>4</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SirenTalk1" ID="{391DF61F-C49C-4B59-BEB3-42817B987746}" ShortID="888190972" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SirenTalk1" ID="{C028F29D-EA69-4245-BB93-206E1EB85627}" ShortID="156954174">
-											<Language>SFX</Language>
-											<AudioFile>SirenTalk1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SirenTalk1" ID="{C028F29D-EA69-4245-BB93-206E1EB85627}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SirenTalk2" ID="{DA67B3CF-EDD4-4F1B-8E1A-2C26A947E29C}" ShortID="557185078" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SirenTalk2" ID="{7C389A1D-5C50-45DD-8F41-164E25C1AAC8}" ShortID="973621276">
-											<Language>SFX</Language>
-											<AudioFile>SirenTalk2.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SirenTalk2" ID="{7C389A1D-5C50-45DD-8F41-164E25C1AAC8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SirenTalk3" ID="{6F4CB812-7D6B-4998-9965-5AB1CB6B6B81}" ShortID="25681325" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SirenTalk3" ID="{D0EC24BB-96BE-4FCE-8134-411943145E50}" ShortID="891057738">
-											<Language>SFX</Language>
-											<AudioFile>SirenTalk3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SirenTalk3" ID="{D0EC24BB-96BE-4FCE-8134-411943145E50}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="SlimeTalk" ID="{E9BCE05A-1BB6-4120-99C7-716A7FC91F0D}" ShortID="93662795">
-							<PropertyList>
-								<Property Name="MakeUpGain" Type="Real64">
-									<ValueList>
-										<Value>-11</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SlimeTalk" ID="{A85E7134-227E-47FC-BF6F-7A9886F4C2A7}" ShortID="235865654" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SlimeTalk" ID="{B1CDBBB0-3679-4211-9242-06486FAA44F2}" ShortID="353690852">
-											<Language>SFX</Language>
-											<AudioFile>SlimeTalk.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SlimeTalk" ID="{B1CDBBB0-3679-4211-9242-06486FAA44F2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SlimeTalk3" ID="{02C4FE32-A35D-48CF-9427-5C3EA8FA7EA5}" ShortID="551742642" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SlimeTalk3" ID="{E625CFA5-38CC-4C55-BDDA-A1E7051DAA46}" ShortID="54533043">
-											<Language>SFX</Language>
-											<AudioFile>SlimeTalk3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SlimeTalk3" ID="{E625CFA5-38CC-4C55-BDDA-A1E7051DAA46}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="GoatTalk" ID="{28D285A9-4F60-4342-8B6E-15DEB9A481E1}" ShortID="1055030539">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="GoatTalk1" ID="{38A112DC-71B9-41FC-9359-FE4003D01BE0}" ShortID="96162087" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GoatTalk1" ID="{785A79EE-C362-489F-8200-DA10DCBD0701}" ShortID="793808539">
-											<Language>SFX</Language>
-											<AudioFile>GoatTalk1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GoatTalk1" ID="{785A79EE-C362-489F-8200-DA10DCBD0701}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GoatTalk2" ID="{651E39B2-4A55-403E-AA18-8DCE1326821F}" ShortID="642425576" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GoatTalk2" ID="{D98078A6-33A4-4B76-B50A-A31B40110CD2}" ShortID="514683755">
-											<Language>SFX</Language>
-											<AudioFile>GoatTalk2.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GoatTalk2" ID="{D98078A6-33A4-4B76-B50A-A31B40110CD2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="GoatTalk3" ID="{E556A1D5-F662-4864-8BF7-8C169FA8A1A2}" ShortID="33503255" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="GoatTalk3" ID="{C7FBF399-E5C8-4D0B-A8E0-043C49FA17E8}" ShortID="754586333">
-											<Language>SFX</Language>
-											<AudioFile>GoatTalk3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="GoatTalk3" ID="{C7FBF399-E5C8-4D0B-A8E0-043C49FA17E8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="SpiderTalk" ID="{124DE200-0E4E-4BC6-8FE1-F16B63D7A796}" ShortID="561672692">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SpiderTalk1" ID="{6D3F77F9-C6CB-464F-B025-44AF3E1FEBD1}" ShortID="212369566" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SpiderTalk1" ID="{E50D0CF4-8688-42C5-9551-0A855692C090}" ShortID="573102958">
-											<Language>SFX</Language>
-											<AudioFile>SpiderTalk1.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SpiderTalk1" ID="{E50D0CF4-8688-42C5-9551-0A855692C090}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SpiderTalk2" ID="{A200A8B3-8E68-41A7-B810-80D2E179ACC9}" ShortID="855923949" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SpiderTalk2" ID="{BBC915CE-F863-46A0-94D0-65DB7E078E9C}" ShortID="496024955">
-											<Language>SFX</Language>
-											<AudioFile>SpiderTalk2.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SpiderTalk2" ID="{BBC915CE-F863-46A0-94D0-65DB7E078E9C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SpiderTalk3" ID="{EFE84C96-EF17-4E7D-A324-D28D5E325DD5}" ShortID="582586094" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SpiderTalk3" ID="{E02AA132-9E18-424A-B00E-54F6D5A9FD8F}" ShortID="943150710">
-											<Language>SFX</Language>
-											<AudioFile>SpiderTalk3.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SpiderTalk3" ID="{E02AA132-9E18-424A-B00E-54F6D5A9FD8F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Fear" ID="{10C88A1E-0C6D-431E-A8BD-758C7DAB8D37}" ShortID="344563578">
 					<ChildrenList>
-						<RandomSequenceContainer Name="KappaFear" ID="{94F77CE4-6431-4587-8D51-C51CE8131544}" ShortID="122722570">
+						<ActorMixer Name="FearMix" ID="{3F9B2942-E1EE-4916-9C8C-6D25723D7CF1}" ShortID="912561324">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+									<ObjectRef Name="MonsterSFX" ID="{AA525740-3F86-49B7-BD0C-F2D89E710120}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="KappaFear1" ID="{D8D1706E-EEB6-469B-B5B7-DA7502DE04A3}" ShortID="565940778" Type="SoundFX">
+								<RandomSequenceContainer Name="GoatFear" ID="{F0A4E5A7-C37A-47CB-9DF2-C78DB09F71FD}" ShortID="849521353">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -631,35 +1401,28 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="KappaFear1" ID="{6B689073-B889-497E-9241-3162A56D23F8}" ShortID="930675429">
-											<Language>SFX</Language>
-											<AudioFile>KappaFear1.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="GoatFear" ID="{90FB86DB-A2F0-4EE6-B946-D7E2C982C1CD}" ShortID="752447528" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoatFear" ID="{7E90AD93-01D8-4E89-8FB9-D0908715F3E9}" ShortID="94661532">
+													<Language>SFX</Language>
+													<AudioFile>GoatFear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoatFear" ID="{7E90AD93-01D8-4E89-8FB9-D0908715F3E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="KappaFear1" ID="{6B689073-B889-497E-9241-3162A56D23F8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="SlimeFear" ID="{1CE788E4-B37A-4D9E-B57D-8953C5BC4F43}" ShortID="990118906">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SlimeFear" ID="{0BFF4779-7F58-4988-870A-840287FDDD1D}" ShortID="970957029" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="GoblinFear" ID="{6BD7902F-DE1A-49CC-B5C0-6C5242DD89A5}" ShortID="363753984">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -669,28 +1432,54 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SlimeFear" ID="{73891D43-9662-4AE1-BFF3-176D9A85DAE0}" ShortID="139161804">
-											<Language>SFX</Language>
-											<AudioFile>SlimeFear.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="GoblinFear" ID="{01D8A84E-B746-45F8-AE1A-1B9048FB80D6}" ShortID="468462306" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoblinFear" ID="{69BEE526-ABB6-46E9-BFC3-4A8FA203295F}" ShortID="257273526">
+													<Language>SFX</Language>
+													<AudioFile>GoblinFear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoblinFear" ID="{69BEE526-ABB6-46E9-BFC3-4A8FA203295F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="GoblinFear-001" ID="{739DA56F-EFD5-4FF4-95E1-6174FE4C78A3}" ShortID="252175710" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="GoblinFear-001" ID="{78D76D6D-07F1-4BA9-AC02-EA679FCF9B1C}" ShortID="407875960">
+													<Language>SFX</Language>
+													<AudioFile>GoblinFear-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="GoblinFear-001" ID="{78D76D6D-07F1-4BA9-AC02-EA679FCF9B1C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SlimeFear" ID="{73891D43-9662-4AE1-BFF3-176D9A85DAE0}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="SirenFear" ID="{087875E8-D7C1-4951-B7EC-982C4CDC2464}" ShortID="124750727">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SirenFear1" ID="{DE236014-F989-42B0-A217-B260713EF8C2}" ShortID="572666649" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="KappaFear" ID="{94F77CE4-6431-4587-8D51-C51CE8131544}" ShortID="122722570">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -700,35 +1489,35 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SirenFear1" ID="{2AF8B7CF-E49C-4935-B738-05125B399890}" ShortID="869918427">
-											<Language>SFX</Language>
-											<AudioFile>SirenFear1.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="KappaFear1" ID="{D8D1706E-EEB6-469B-B5B7-DA7502DE04A3}" ShortID="565940778" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="KappaFear1" ID="{6B689073-B889-497E-9241-3162A56D23F8}" ShortID="930675429">
+													<Language>SFX</Language>
+													<AudioFile>KappaFear1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="KappaFear1" ID="{6B689073-B889-497E-9241-3162A56D23F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SirenFear1" ID="{2AF8B7CF-E49C-4935-B738-05125B399890}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="SpiderFear" ID="{BF9A5C77-3443-4F66-8CEE-3218F995516C}" ShortID="667008890">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SpiderFear" ID="{06AB56F5-7A3C-449F-A0B6-2E45040A928D}" ShortID="242455786" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="PiratePlantFear" ID="{9CA4ACC3-A478-43C1-984C-BCD13CA445D4}" ShortID="262785283">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -738,35 +1527,111 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="SpiderFear" ID="{41DE3778-E018-429D-982C-7A9331A5F2A7}" ShortID="1013494295">
-											<Language>SFX</Language>
-											<AudioFile>SpiderFear.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="PiratePlantFear" ID="{F1F7C177-4105-47BC-8689-4609C1EA6A0A}" ShortID="1035023786" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PiratePlantFear" ID="{84BB3071-83D8-4357-9938-D1793F5357A5}" ShortID="1056510300">
+													<Language>SFX</Language>
+													<AudioFile>PiratePlantFear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PiratePlantFear" ID="{84BB3071-83D8-4357-9938-D1793F5357A5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PiratePlantFear-001" ID="{6478F374-7F3D-40F7-BBC6-DE982EB9122A}" ShortID="547714322" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PiratePlantFear-001" ID="{04FDA6E8-3CE5-4E0E-B980-0270C682E546}" ShortID="718179512">
+													<Language>SFX</Language>
+													<AudioFile>PiratePlantFear-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PiratePlantFear-001" ID="{04FDA6E8-3CE5-4E0E-B980-0270C682E546}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PiratePlantFear-002" ID="{2E923ABE-761B-47E5-91CC-EE169936E69F}" ShortID="969263202" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PiratePlantFear-002" ID="{F4A77B5A-C72E-4319-B2D3-070D1435F0F7}" ShortID="379993844">
+													<Language>SFX</Language>
+													<AudioFile>PiratePlantFear-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PiratePlantFear-002" ID="{F4A77B5A-C72E-4319-B2D3-070D1435F0F7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PiratePlantFear-003" ID="{70C131BE-F301-4EAA-9185-A5FF2034D5FE}" ShortID="1017114346" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PiratePlantFear-003" ID="{91D886D4-10CB-47B1-990B-41D15662980E}" ShortID="149048950">
+													<Language>SFX</Language>
+													<AudioFile>PiratePlantFear-003.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PiratePlantFear-003" ID="{91D886D4-10CB-47B1-990B-41D15662980E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PiratePlantFear-004" ID="{767216BF-9455-467F-B62C-9FD62D15034B}" ShortID="463275110" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PiratePlantFear-004" ID="{4DB93F46-3C79-40AC-A72C-8E799D57D2EF}" ShortID="334812832">
+													<Language>SFX</Language>
+													<AudioFile>PiratePlantFear-004.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PiratePlantFear-004" ID="{4DB93F46-3C79-40AC-A72C-8E799D57D2EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SpiderFear" ID="{41DE3778-E018-429D-982C-7A9331A5F2A7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="GoatFear" ID="{F0A4E5A7-C37A-47CB-9DF2-C78DB09F71FD}" ShortID="849521353">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-7</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="GoatFear" ID="{90FB86DB-A2F0-4EE6-B946-D7E2C982C1CD}" ShortID="752447528" Type="SoundFX">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SirenFear" ID="{087875E8-D7C1-4951-B7EC-982C4CDC2464}" ShortID="124750727">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -776,17 +1641,309 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="GoatFear" ID="{7E90AD93-01D8-4E89-8FB9-D0908715F3E9}" ShortID="94661532">
+										<Sound Name="SirenFear1" ID="{DE236014-F989-42B0-A217-B260713EF8C2}" ShortID="572666649" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SirenFear1" ID="{2AF8B7CF-E49C-4935-B738-05125B399890}" ShortID="869918427">
+													<Language>SFX</Language>
+													<AudioFile>SirenFear1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SirenFear1" ID="{2AF8B7CF-E49C-4935-B738-05125B399890}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SlimeFear" ID="{1CE788E4-B37A-4D9E-B57D-8953C5BC4F43}" ShortID="990118906">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SlimeFear" ID="{0BFF4779-7F58-4988-870A-840287FDDD1D}" ShortID="970957029" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SlimeFear" ID="{73891D43-9662-4AE1-BFF3-176D9A85DAE0}" ShortID="139161804">
+													<Language>SFX</Language>
+													<AudioFile>SlimeFear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SlimeFear" ID="{73891D43-9662-4AE1-BFF3-176D9A85DAE0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="SpiderFear" ID="{BF9A5C77-3443-4F66-8CEE-3218F995516C}" ShortID="667008890">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SpiderFear" ID="{06AB56F5-7A3C-449F-A0B6-2E45040A928D}" ShortID="242455786" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SpiderFear" ID="{41DE3778-E018-429D-982C-7A9331A5F2A7}" ShortID="1013494295">
+													<Language>SFX</Language>
+													<AudioFile>SpiderFear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SpiderFear" ID="{41DE3778-E018-429D-982C-7A9331A5F2A7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VampireFear" ID="{B828A47D-7DEE-45AF-9C22-5A116DBB6F4B}" ShortID="752769160">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="VampireFear" ID="{20673147-0509-42C5-A23E-C12133BFF70A}" ShortID="1033987562" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VampireFear" ID="{38A1B763-22B2-44A8-BADC-622266962041}" ShortID="827535193">
+													<Language>SFX</Language>
+													<AudioFile>VampireFear.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VampireFear" ID="{38A1B763-22B2-44A8-BADC-622266962041}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VampireFear-001" ID="{324E1891-1D77-4CA8-B33E-084E2598ADD4}" ShortID="265274691" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VampireFear-001" ID="{97462672-A2C1-4F96-B08B-9C29A606D32A}" ShortID="603277116">
+													<Language>SFX</Language>
+													<AudioFile>VampireFear-001.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VampireFear-001" ID="{97462672-A2C1-4F96-B08B-9C29A606D32A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="VampireFear-002" ID="{6D533F2B-F69B-4CDD-9311-B6EDBBE0BE08}" ShortID="957398680" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="VampireFear-002" ID="{29F04B4A-239C-43B7-B97E-10F3B0A40CDB}" ShortID="363792044">
+													<Language>SFX</Language>
+													<AudioFile>VampireFear-002.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="VampireFear-002" ID="{29F04B4A-239C-43B7-B97E-10F3B0A40CDB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="FishFear" ID="{AE575B3A-ED20-4091-AA2B-D059086BC136}" ShortID="32045575" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FishFear" ID="{75AE6312-BD1C-4B79-9E80-629C0958A75D}" ShortID="643499673">
 											<Language>SFX</Language>
-											<AudioFile>GoatFear.wav</AudioFile>
+											<AudioFile>FishFear.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="GoatFear" ID="{7E90AD93-01D8-4E89-8FB9-D0908715F3E9}" Platform="Linked"/>
+										<ActiveSource Name="FishFear" ID="{75AE6312-BD1C-4B79-9E80-629C0958A75D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GhostFear" ID="{76E738B4-FE59-4728-998F-86157904E5A7}" ShortID="1047326473" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GhostFear" ID="{4FF33BF9-8B8F-448E-9261-540B160DD4B9}" ShortID="693859380">
+											<Language>SFX</Language>
+											<AudioFile>GhostFear.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GhostFear" ID="{4FF33BF9-8B8F-448E-9261-540B160DD4B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MimicFear" ID="{81185B7E-A519-4BA0-9015-D1634342FE8D}" ShortID="303949111" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MimicFear" ID="{07A33B9B-E8CB-4896-998B-6C466F24C955}" ShortID="645212370">
+											<Language>SFX</Language>
+											<AudioFile>MimicFear.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MimicFear" ID="{07A33B9B-E8CB-4896-998B-6C466F24C955}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="OctopusFear" ID="{BD3EC3F0-07CB-4C3B-A82B-67ECC0123D17}" ShortID="700688450" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="OctopusFear" ID="{CF270010-C425-4842-9288-F2D84A5B0CEA}" ShortID="844042624">
+											<Language>SFX</Language>
+											<AudioFile>OctopusFear.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="OctopusFear" ID="{CF270010-C425-4842-9288-F2D84A5B0CEA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PrinceFear" ID="{DE8FAC51-3168-4B8D-9FFC-16BC4B330F5A}" ShortID="86696757" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PrinceFear" ID="{CE765CF9-79C9-4635-A416-C825F69183FF}" ShortID="365273085">
+											<Language>SFX</Language>
+											<AudioFile>PrinceFear.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PrinceFear" ID="{CE765CF9-79C9-4635-A416-C825F69183FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="ZombieFear" ID="{40E800A3-F3D6-4761-B2B3-CE0931CC3728}" ShortID="380761981" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="ZombieFear" ID="{0E3D751F-C74B-4F6B-8AA8-811DC37E60DC}" ShortID="810283450">
+											<Language>SFX</Language>
+											<AudioFile>ZombieFear.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="ZombieFear" ID="{0E3D751F-C74B-4F6B-8AA8-811DC37E60DC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-						</RandomSequenceContainer>
+						</ActorMixer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Hits" ID="{1604A29C-9C5C-47CE-B819-EFA95E4009D2}" ShortID="271208944">
@@ -876,6 +2033,257 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="hit_humanoid3" ID="{B798C8D9-F152-4CDA-8BD3-1BE2ACE67B69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Misc" ID="{EF21184F-CCB1-4A20-B2DB-87336A2A16CE}" ShortID="109005886">
+					<ChildrenList>
+						<RandomSequenceContainer Name="CannibalAttack" ID="{E8A72EC6-2E21-4F50-8E07-8F336F5A526E}" ShortID="456591024">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="HumanSFX" ID="{3771893A-B55B-48C6-B3CC-5AC5C402FB44}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="CannibalAttack" ID="{91B9330F-34B1-4FA9-8685-3F3FB51A0F1B}" ShortID="179063153" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CannibalAttack" ID="{69C2BA11-34BB-42BA-BBCD-01F370879846}" ShortID="31633014">
+											<Language>SFX</Language>
+											<AudioFile>CannibalAttack.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CannibalAttack" ID="{69C2BA11-34BB-42BA-BBCD-01F370879846}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CannibalAttack-001" ID="{78946EE3-3A15-4C54-B8D7-CD8942296C91}" ShortID="16733548" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CannibalAttack-001" ID="{DD9D8361-7A3C-4933-B48B-3F47CF2B1FF5}" ShortID="746437673">
+											<Language>SFX</Language>
+											<AudioFile>CannibalAttack-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CannibalAttack-001" ID="{DD9D8361-7A3C-4933-B48B-3F47CF2B1FF5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CannibalAttack-002" ID="{BC50AA3E-285C-4CE7-9B23-E74C5327AFBB}" ShortID="552506363" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CannibalAttack-002" ID="{7032A1E4-E445-438C-BA11-D4C421352783}" ShortID="1002478379">
+											<Language>SFX</Language>
+											<AudioFile>CannibalAttack-002.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CannibalAttack-002" ID="{7032A1E4-E445-438C-BA11-D4C421352783}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CannibalAttack-003" ID="{8FF0DA67-8571-40E6-AAE7-346C3E923633}" ShortID="137177053" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CannibalAttack-003" ID="{176BB78E-820E-4DBA-92C5-69E202E91954}" ShortID="802116070">
+											<Language>SFX</Language>
+											<AudioFile>CannibalAttack-003.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CannibalAttack-003" ID="{176BB78E-820E-4DBA-92C5-69E202E91954}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CannibalAttack-004" ID="{2CFDCB7F-E390-4695-8DEA-7277926DD583}" ShortID="949660055" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CannibalAttack-004" ID="{DFE64787-D14E-4CA1-90F7-CBD56F9223AB}" ShortID="1044002196">
+											<Language>SFX</Language>
+											<AudioFile>CannibalAttack-004.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CannibalAttack-004" ID="{DFE64787-D14E-4CA1-90F7-CBD56F9223AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="MageTuto" ID="{51B16418-7518-4093-88F4-25AA81BD7233}" ShortID="283341528">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="MageTuto" ID="{37B7E63E-5CCB-4E16-B978-1FB60D62AC36}" ShortID="442711423" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto" ID="{19EB7E1A-4298-47A7-83A2-6013EDE617F0}" ShortID="221112462">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto" ID="{19EB7E1A-4298-47A7-83A2-6013EDE617F0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-001" ID="{0CDAA1B8-711B-43FD-B32B-B3EAB62D2592}" ShortID="126992395" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-001" ID="{9C0D9C6D-A7E2-44E2-BE89-858CEC38302B}" ShortID="979462096">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-001" ID="{9C0D9C6D-A7E2-44E2-BE89-858CEC38302B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-002" ID="{3A3CA4DF-F1EB-47FF-BB28-378692A5C4D9}" ShortID="216428143" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-002" ID="{7788ECA4-FAE6-47FB-BF86-AFEB1E4D8ABB}" ShortID="659936324">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-002.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-002" ID="{7788ECA4-FAE6-47FB-BF86-AFEB1E4D8ABB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-003" ID="{AED60B59-D99C-4BA3-8318-0C30A7DF8D76}" ShortID="279990221" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-003" ID="{D500DB43-87F2-478C-8A71-E2176C8E4209}" ShortID="685048901">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-003.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-003" ID="{D500DB43-87F2-478C-8A71-E2176C8E4209}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-004" ID="{D261A42B-6810-4472-9580-1E2F361BCFA4}" ShortID="2240659" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-004" ID="{38B1856B-74B4-450E-8A6F-66E75581E41F}" ShortID="183509136">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-004.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-004" ID="{38B1856B-74B4-450E-8A6F-66E75581E41F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-005" ID="{D0D0D92E-A03B-404E-823E-38B980A64DFA}" ShortID="84851427" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-005" ID="{75DCD932-5E6F-4581-8EB9-6216D6732F0E}" ShortID="478512918">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-005.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-005" ID="{75DCD932-5E6F-4581-8EB9-6216D6732F0E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

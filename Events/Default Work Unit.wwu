@@ -157,6 +157,226 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_FishFear" ID="{ACC99072-FDDE-4A2F-A66F-4E697659F1D7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8C743609-372F-475D-BBDE-47C4F89BC788}" ShortID="372506834" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{38CB543D-60E2-4B13-9265-AB27DA749732}" Global="false">
+									<ObjectRef Name="FishFear" ID="{AE575B3A-ED20-4091-AA2B-D059086BC136}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GhostFear" ID="{49C657E0-E4BF-4E72-9AEB-23113EB077BD}">
+					<ChildrenList>
+						<Action Name="Play" ID="{6A01ABC6-DF94-4508-B569-4368AE632A2F}" ShortID="664799140" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{BDE95DB0-48E2-4B6B-A3AD-CC795232EB5E}" Global="false">
+									<ObjectRef Name="GhostFear" ID="{76E738B4-FE59-4728-998F-86157904E5A7}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GoblinFear" ID="{A81FA969-CF52-41B4-9944-F9F55079A6E6}">
+					<ChildrenList>
+						<Action Name="Play" ID="{7D8FF616-93B5-4018-B06A-2EB2D136CD28}" ShortID="662647541" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E682FE90-34E1-42B2-8223-9D6989AB51B8}" Global="false">
+									<ObjectRef Name="GoblinFear" ID="{6BD7902F-DE1A-49CC-B5C0-6C5242DD89A5}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OctopusFear" ID="{B2E488AE-DF07-4EE8-8FCB-40D3AF876BA2}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B679D3C2-1162-439B-9D31-946C17939D75}" ShortID="799928243" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4B76F87E-E39D-4F29-9A58-243782D68C8E}" Global="false">
+									<ObjectRef Name="OctopusFear" ID="{BD3EC3F0-07CB-4C3B-A82B-67ECC0123D17}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PiratePlantFear" ID="{E0D348FA-8704-476B-81E6-9EE2F1FBF0CC}">
+					<ChildrenList>
+						<Action Name="Play" ID="{4F5315A4-4BB4-49F3-A539-E77A77C1AD23}" ShortID="10889454" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1B311BEB-EB3B-49CD-B79B-C6DC343D412A}" Global="false">
+									<ObjectRef Name="PiratePlantFear" ID="{9CA4ACC3-A478-43C1-984C-BCD13CA445D4}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PrinceFear" ID="{FA56910C-417B-462D-98C1-3B73C3FC1235}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8FAA6D33-5818-4F5B-AE01-BB601DDAB795}" ShortID="190753333" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1C2E126B-64AC-4FD3-8B88-41DD798BEAC9}" Global="false">
+									<ObjectRef Name="PrinceFear" ID="{DE8FAC51-3168-4B8D-9FFC-16BC4B330F5A}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_VampireFear" ID="{01C53293-32C2-4E20-B8AF-B0872B0DC466}">
+					<ChildrenList>
+						<Action Name="Play" ID="{8DEE2A0C-36E1-4EA8-8A46-E819347A6C0C}" ShortID="352914737" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DEC3403E-F06B-4172-BC45-C76DA82E5938}" Global="false">
+									<ObjectRef Name="VampireFear" ID="{B828A47D-7DEE-45AF-9C22-5A116DBB6F4B}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ZombieFear" ID="{2C1FC9E3-65E5-48E2-825E-50B5F90B64A7}">
+					<ChildrenList>
+						<Action Name="Play" ID="{2FD82BA7-D796-42A6-B8D5-3DE1DF02A08F}" ShortID="91493435" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{982CB31B-4AEE-4C8C-A07F-08F4B0C69D7C}" Global="false">
+									<ObjectRef Name="ZombieFear" ID="{40E800A3-F3D6-4761-B2B3-CE0931CC3728}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_DemonTalk" ID="{5CD5F040-4D0B-4B2E-AC6F-707EE479F93A}">
+					<ChildrenList>
+						<Action Name="Play" ID="{AFCFB066-7D4A-44A0-A49D-559E273427B0}" ShortID="827029219" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{DB632CCD-892D-4494-9B2D-C0715E458800}" Global="false">
+									<ObjectRef Name="DemonTalk" ID="{9CAEC026-6834-4F0F-88D1-64C278B72A62}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FishTalk" ID="{4E4D7498-DCD5-46B7-B510-12C0B56317C2}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FA920FA2-9CFD-4037-A0C6-D23CBE9451FD}" ShortID="392317648" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{70AFBADC-A55A-49DB-990E-7DB1C622C8DA}" Global="false">
+									<ObjectRef Name="FishTalk" ID="{32948BBA-4AF3-40CA-A5B1-39E338415566}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GhostTalk" ID="{170348D5-30E6-4E0A-90E1-175757BBD873}">
+					<ChildrenList>
+						<Action Name="Play" ID="{969566AB-2992-4959-810D-670E94589282}" ShortID="969448938" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{0C8459CB-0103-4BCD-9EBF-659203B09C87}" Global="false">
+									<ObjectRef Name="GhostTalk" ID="{DC262EF4-1ACA-40D7-BE79-AABFF57EC1D6}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_GoblinTalk" ID="{4B7BD614-0E4E-4ED7-9A1D-5DE7426023EA}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C882C3B2-12CD-4D76-8ACD-6A9FCD35AAB0}" ShortID="251862325" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{5A99DBEA-95B8-4F27-8C37-516582D52ED2}" Global="false">
+									<ObjectRef Name="GoblinTalk" ID="{DEEA6A31-D5E2-4464-9B20-7C0221C105F9}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_OctopusTalk" ID="{FFC2754F-CF45-4E03-8C5E-1DE34DF8835E}">
+					<ChildrenList>
+						<Action Name="Play" ID="{B4A51D97-26C1-4F62-A7A6-1A4590369603}" ShortID="441487842" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8B92F5A9-B462-444F-9194-4682E13D9691}" Global="false">
+									<ObjectRef Name="OctopusTalk" ID="{0518E0FA-8439-4C1E-BEC8-D541ACCEED02}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PrinceTalk" ID="{F93390F2-8FF5-47FA-B42B-F1F156541D83}">
+					<ChildrenList>
+						<Action Name="Play" ID="{998C0CD6-95E1-43CC-A3DD-D19DCE2F0266}" ShortID="408040546" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{4C9FE4DB-EDD2-4680-88EA-9BBA46BA2742}" Global="false">
+									<ObjectRef Name="PrinceTalk" ID="{E0DF7EE3-AC6E-4A32-8D3B-4ED9C711CCF2}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_VampireTalk" ID="{796C8643-7075-47ED-82EC-19D2496C4E3D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{CAC374EB-E86C-4217-86C3-0AA556CCE89F}" ShortID="370072081" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{254C166C-1757-4725-9D62-810E42B5E4E6}" Global="false">
+									<ObjectRef Name="VampireTalk" ID="{641F3565-473A-463E-B841-D923D4E0D16E}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_ZombieTalk" ID="{98BFE91B-E9A2-44DD-904F-C3F89E2B27CD}">
+					<ChildrenList>
+						<Action Name="Play" ID="{44558BD1-AB5D-46B6-BDC5-1D2920769E47}" ShortID="1001082771" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3DCD7ABC-0DE1-42CA-8B49-9BD19D1EFD7D}" Global="false">
+									<ObjectRef Name="ZombieTalk" ID="{ECEF6BE5-4FA8-40E3-AED3-9EED665A1F24}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CannibalAttack" ID="{D216A660-69CF-4E6B-9FB7-6ECD3C0BA207}">
+					<ChildrenList>
+						<Action Name="Play" ID="{E8796788-ED96-431C-9CC4-B2FE5EFE0E16}" ShortID="933417413" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{6DA853D9-9849-4E25-9E7F-ABDD6E9152F4}" Global="false">
+									<ObjectRef Name="CannibalAttack" ID="{E8A72EC6-2E21-4F50-8E07-8F336F5A526E}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MimicFear" ID="{7FF4284C-43A3-4975-8C3F-6BD059622A44}">
+					<ChildrenList>
+						<Action Name="Play" ID="{285FD064-82DD-4D64-B688-A465CB1F08C4}" ShortID="453125924" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CE532987-ADF8-4AC5-8491-A6158D53609F}" Global="false">
+									<ObjectRef Name="MimicFear" ID="{81185B7E-A519-4BA0-9015-D1634342FE8D}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MimicTalk" ID="{3427765A-394C-4CCF-900A-CE7514F20CBC}">
+					<ChildrenList>
+						<Action Name="Play" ID="{D0E5B883-DBA3-44F0-BDC2-1AE3CD654A69}" ShortID="1021979017" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{1FD3C0D1-5F39-4E2B-AA07-D4D3DABEB97C}" Global="false">
+									<ObjectRef Name="MimicTalk" ID="{32126F6B-1085-4746-92A0-958B877265D1}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MageTuto" ID="{F9C9D8B8-1DCE-4B31-8E1A-1E541FD46F20}">
+					<ChildrenList>
+						<Action Name="Play" ID="{22301C1A-B28A-4154-8B84-9133C224DB4E}" ShortID="454671289" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{D692B625-B286-4F14-BFE4-39C3293893F9}" Global="false">
+									<ObjectRef Name="MageTuto" ID="{51B16418-7518-4093-88F4-25AA81BD7233}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
