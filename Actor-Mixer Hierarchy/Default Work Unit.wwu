@@ -2290,6 +2290,516 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
+				<ActorMixer Name="AMB" ID="{4388216E-4FE4-45EC-950E-7E6C651A0106}" ShortID="774175523">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="amb_desert" ID="{B5082E67-725F-4D59-829D-63C28EDC7695}" ShortID="419718492">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_desert" ID="{B0C5DB12-ED89-4765-97D5-A64E6495637C}" ShortID="38004094" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_desert" ID="{4E13E00D-1F57-4D0C-8F6B-CCB93D04D69C}" ShortID="863624192">
+											<Language>SFX</Language>
+											<AudioFile>amb_desert.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_desert" ID="{4E13E00D-1F57-4D0C-8F6B-CCB93D04D69C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_grotte" ID="{6C24FC77-58AF-4638-8238-535C25575B43}" ShortID="1055094714">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_grotte" ID="{B286518D-8B68-44CB-8579-7D498B35EBC1}" ShortID="979748278" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_grotte" ID="{2D918F04-FFEA-4732-A646-F70BBDE9544F}" ShortID="564414897">
+											<Language>SFX</Language>
+											<AudioFile>amb_grotte.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_grotte" ID="{2D918F04-FFEA-4732-A646-F70BBDE9544F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_forest" ID="{0BAFEC06-E973-4CCD-BCC8-731E9BCD9310}" ShortID="599629752">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_forest" ID="{D39E1231-0B70-4F85-9161-BFD4A8416577}" ShortID="790581978" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_forest" ID="{A21D3AB5-8602-4668-B068-8830B629E547}" ShortID="435951965">
+											<Language>SFX</Language>
+											<AudioFile>amb_forest.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_forest" ID="{A21D3AB5-8602-4668-B068-8830B629E547}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_marecage" ID="{FFD20D46-ECD9-45C7-97C4-A73E17C2FAAA}" ShortID="696281586">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_marecage" ID="{D4A314D1-9959-4E18-B166-2D4C9E13B37C}" ShortID="840842947" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_marecage" ID="{12812E61-DB60-4002-A0C2-48A6E577F2AB}" ShortID="723859842">
+											<Language>SFX</Language>
+											<AudioFile>amb_marecage.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_marecage" ID="{12812E61-DB60-4002-A0C2-48A6E577F2AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_mountain" ID="{8C18C0E0-6C5E-42E8-A511-52A87A76EA94}" ShortID="1040783825">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_mountain" ID="{A17820FB-CE05-43C3-9A99-DDC6FCE09B47}" ShortID="135615442" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_mountain" ID="{E07EC177-78E4-4675-B863-AA5B61513304}" ShortID="503903890">
+											<Language>SFX</Language>
+											<AudioFile>amb_mountain.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_mountain" ID="{E07EC177-78E4-4675-B863-AA5B61513304}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_plage" ID="{445F1970-FEBA-4B21-88A4-7657D7197CE6}" ShortID="827109270">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_plage" ID="{3C335D82-981F-499B-98D7-D29CD23CDD6A}" ShortID="315269376" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_plage" ID="{08D8EA84-6C3F-4AB9-B749-9D90E5D503E7}" ShortID="15573381">
+											<Language>SFX</Language>
+											<AudioFile>amb_plage.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_plage" ID="{08D8EA84-6C3F-4AB9-B749-9D90E5D503E7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_plain" ID="{B663316F-4283-4247-839C-DEA5D585D9C7}" ShortID="259025884">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_plain" ID="{F49C7815-79BF-406F-9647-53CAD0C417D8}" ShortID="197944249" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_plain" ID="{6712F833-BD8B-492D-A325-3B1676F06C05}" ShortID="991085633">
+											<Language>SFX</Language>
+											<AudioFile>amb_plain.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_plain" ID="{6712F833-BD8B-492D-A325-3B1676F06C05}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_snow" ID="{F3837541-91F3-441E-8C92-D2C2355E279A}" ShortID="863900079">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_snow" ID="{D2D9B3D6-EB4C-410E-83EB-616F91AF8561}" ShortID="177334889" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_snow" ID="{12D6E091-DDB8-4F17-A63D-B24FDBC9088F}" ShortID="970123088">
+											<Language>SFX</Language>
+											<AudioFile>amb_snow.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_snow" ID="{12D6E091-DDB8-4F17-A63D-B24FDBC9088F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_tavern" ID="{2929C48F-985D-4064-89DE-06AA0EC2F0FF}" ShortID="548478477">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_tavern" ID="{9183C466-0F00-4531-8153-1F9E2A51C4B4}" ShortID="728115082" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_tavern" ID="{2D00FAA0-3598-4275-919B-47C6FBF323FF}" ShortID="287460802">
+											<Language>SFX</Language>
+											<AudioFile>amb_tavern.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_tavern" ID="{2D00FAA0-3598-4275-919B-47C6FBF323FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="dungeon" ID="{467AAA8C-D77F-4307-B81F-B10BC379D7C2}" ShortID="856141116">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="dungeon" ID="{79B39643-6EA1-4FEE-B116-A1B7A2DCD48A}" ShortID="41451016" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="dungeon" ID="{33A8895A-896B-4D6C-AC24-8BD6D0E929E4}" ShortID="926320738">
+											<Language>SFX</Language>
+											<AudioFile>dungeon.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="dungeon" ID="{33A8895A-896B-4D6C-AC24-8BD6D0E929E4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_campement" ID="{0D48CD7C-54AD-4C98-ADB4-5AE26D999867}" ShortID="897571737">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="campement" ID="{5B7016A3-1683-4950-96DF-E5FCF5D9AFF0}" ShortID="470377650" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="campement" ID="{E004C2BD-9847-4A72-A58F-13150C0E9B1E}" ShortID="515972796">
+											<Language>SFX</Language>
+											<AudioFile>campement.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="campement" ID="{E004C2BD-9847-4A72-A58F-13150C0E9B1E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="amb_portail" ID="{ACF239BA-2A4C-4493-B1CB-3E4C2C193042}" ShortID="383654852">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="amb_portail" ID="{B0DB830B-FFAE-4CFB-9818-EDB94C7D3E6E}" ShortID="18675430" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Amb" ID="{576F8800-A4B1-4631-BF9E-53AE469B3376}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="amb_portail" ID="{A1B6EDA1-3C38-4DFB-826E-5668E417B735}" ShortID="908202217">
+											<Language>SFX</Language>
+											<AudioFile>amb_portail.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="amb_portail" ID="{A1B6EDA1-3C38-4DFB-826E-5668E417B735}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

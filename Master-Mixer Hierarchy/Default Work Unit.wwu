@@ -21,6 +21,11 @@
 						</Bus>
 						<Bus Name="MonsterSFX" ID="{AA525740-3F86-49B7-BD0C-F2D89E710120}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="EnablePanner" Type="bool" Value="True"/>
 								<Property Name="EnablePositioning" Type="bool" Value="True"/>
 							</PropertyList>

@@ -132,6 +132,14 @@
 							<Position X="0" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="CAMPEMENT" ID="{783D4341-9A84-4BCD-BA68-0206E6ED767C}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="0" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MARECAGE" ID="{9A11CFC6-97EC-4EAB-94BC-DEBDC506C673}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="0" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_SpiderTalk" ID="{FF3125F1-2E11-46A1-9B27-6FFF49095603}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -150,6 +158,14 @@
 						<Module>
 							<ObjectRef Name="Play_OctopusTalk" ID="{FFC2754F-CF45-4E03-8C5E-1DE34DF8835E}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="DEPART" ID="{931BA9DF-B253-4A34-B0D3-9C75EF845AA9}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MONTAGNE" ID="{79AC4C40-C4AA-42B3-AC2B-22C3F37EFA61}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="1" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_DemonTalk" ID="{5CD5F040-4D0B-4B2E-AC6F-707EE479F93A}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
@@ -172,6 +188,14 @@
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="DESERT" ID="{A2173485-825D-471E-9D1F-74E115EB84A2}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="NEIGE" ID="{AAAE4721-E532-47CE-A670-CA0DF5CF96E3}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="2" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_FishTalk" ID="{4E4D7498-DCD5-46B7-B510-12C0B56317C2}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -190,6 +214,14 @@
 						<Module>
 							<ObjectRef Name="Play_SlimeFear" ID="{AF22B1C9-6382-4722-9E6A-BFED27F7A0A4}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="3" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="DONJON" ID="{BE2A5C06-8C29-4167-BA2F-93FAFB8ED2FA}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="3" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PLAGE" ID="{DBD20CD4-ABD5-4CDC-99F4-3732CA00A1D9}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="3" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_SirenFear" ID="{E1627DCF-4F8A-41F2-8753-EE3630B7EB14}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
@@ -212,6 +244,14 @@
 							<Position X="4" Y="4"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="FORET" ID="{8FCA1592-3710-446F-8DFB-A281263EFA41}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="4" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PORTAIL" ID="{01034744-4BF6-4A81-AD15-C1A5F2AB833B}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="4" Y="6"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_ZombieFear" ID="{2C1FC9E3-65E5-48E2-825E-50B5F90B64A7}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="5" Y="0"/>
 						</Module>
@@ -230,6 +270,14 @@
 						<Module>
 							<ObjectRef Name="Play_VampireFear" ID="{01C53293-32C2-4E20-B8AF-B0872B0DC466}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="5" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="GROTTE" ID="{AA36F160-395E-4380-A1C3-CC87A0DCAB07}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="5" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="TAVERNE" ID="{F9C32064-76C4-44E5-97E1-37EA41C7F104}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="5" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_FightMusic" ID="{CD7F8872-14BF-458F-9CDB-D868C50D7CFA}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
@@ -292,7 +340,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="T3" ID="{922839EC-B588-45DA-8C2B-AEE88C2398ED}"/>
+						<CurrentSwitchRef Name="T4" ID="{16485E72-F444-4BFC-9504-D280E8872D93}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
