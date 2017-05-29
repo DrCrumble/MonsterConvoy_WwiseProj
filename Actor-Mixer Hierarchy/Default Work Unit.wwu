@@ -2037,6 +2037,207 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="dagger_hit" ID="{E43993AF-5AB2-49C1-8524-90F0A1718020}" ShortID="993705754" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="dagger_hit" ID="{39F991F5-A16C-4242-8DAA-CBBD318C08C3}" ShortID="198955501">
+									<Language>SFX</Language>
+									<AudioFile>dagger_hit.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="dagger_hit" ID="{39F991F5-A16C-4242-8DAA-CBBD318C08C3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="druid_hit" ID="{E8336D74-F031-4279-A44F-6422C4DF89B2}" ShortID="938846798" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="druid_hit" ID="{0DE4BC22-D6BD-4749-B4C9-7C655E432810}" ShortID="796315915">
+									<Language>SFX</Language>
+									<AudioFile>druid_hit.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="druid_hit" ID="{0DE4BC22-D6BD-4749-B4C9-7C655E432810}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="flee" ID="{EF9010B8-98C4-4A7E-9860-C94F6400CDE3}" ShortID="152843408" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="flee" ID="{136E14B4-2BED-4135-97AC-744B4FACA539}" ShortID="942828809">
+									<Language>SFX</Language>
+									<AudioFile>flee.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="flee" ID="{136E14B4-2BED-4135-97AC-744B4FACA539}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="mage_fireball" ID="{C0A65023-FBEE-4FAE-A5BB-78849183CB17}" ShortID="377848788" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="mage_fireball" ID="{9CB83045-0803-40AD-BDE7-51300224DF77}" ShortID="321285063">
+									<Language>SFX</Language>
+									<AudioFile>mage_fireball.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="mage_fireball" ID="{9CB83045-0803-40AD-BDE7-51300224DF77}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="miss" ID="{7EF14CCB-E05E-4395-ACF3-FC0FB2EBB8C2}" ShortID="1057694987" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="miss" ID="{45109ECD-5E74-4ACB-A86D-E79A5D7BFED3}" ShortID="258678738">
+									<Language>SFX</Language>
+									<AudioFile>miss.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="miss" ID="{45109ECD-5E74-4ACB-A86D-E79A5D7BFED3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="priest_hit" ID="{AB053926-B5F6-45BD-A4D9-9047698DE0A4}" ShortID="256138341" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="priest_hit" ID="{D70AE5B0-7EF9-4A5A-A6B0-AB3F051E9BAC}" ShortID="938486136">
+									<Language>SFX</Language>
+									<AudioFile>priest_hit.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="priest_hit" ID="{D70AE5B0-7EF9-4A5A-A6B0-AB3F051E9BAC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sword_hit" ID="{EBB35DA6-DFD9-48FD-AD9B-9114C0D5547F}" ShortID="804859765" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="sword_hit" ID="{42F8E880-DCED-4254-B802-3341B683731C}" ShortID="1071780485">
+									<Language>SFX</Language>
+									<AudioFile>sword_hit.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="sword_hit" ID="{42F8E880-DCED-4254-B802-3341B683731C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="arrow_hit" ID="{57D239C0-1845-4B09-943A-FC4CF2824906}" ShortID="255204244" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="arrow_hit" ID="{A19588B7-9D6A-4B40-AD7E-E4BFB4B93689}" ShortID="887885394">
+									<Language>SFX</Language>
+									<AudioFile>arrow_hit.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="arrow_hit" ID="{A19588B7-9D6A-4B40-AD7E-E4BFB4B93689}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Misc" ID="{EF21184F-CCB1-4A20-B2DB-87336A2A16CE}" ShortID="109005886">
@@ -2311,7 +2512,7 @@
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6.5"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
@@ -2459,6 +2660,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="amb_marecage" ID="{12812E61-DB60-4002-A0C2-48A6E577F2AB}" ShortID="723859842">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.200784313725492"/>
+												<Property Name="TrimEnd" Type="Real64" Value="59.7835294117647"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>amb_marecage.wav</AudioFile>
 										</AudioFileSource>
@@ -2473,7 +2678,7 @@
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
@@ -2723,7 +2928,7 @@
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6.5"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -2800,6 +3005,571 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<Folder Name="Gingles" ID="{6377D917-533E-4750-BAEE-CA33FBBCF5D4}" ShortID="546947347">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Win" ID="{7EB275F3-EE55-4E60-BDE0-FE9C6DD537E8}" ShortID="581941019">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="win_gingle" ID="{4EB41C21-5BAF-4CD1-A30E-EA14529DF653}" ShortID="1052282042" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle" ID="{349A7B90-14F2-4C27-9AB8-ADAB687678DF}" ShortID="886909834">
+											<Language>SFX</Language>
+											<AudioFile>win_gingle.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle" ID="{349A7B90-14F2-4C27-9AB8-ADAB687678DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="win_gingle-001" ID="{BD15BEF7-603D-4E6F-8AD0-FECC9AD3C147}" ShortID="229904062" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle-001" ID="{A653B06C-06D2-4F4C-9718-5A25AB1185BB}" ShortID="982225129">
+											<Language>SFX</Language>
+											<AudioFile>win_gingle-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle-001" ID="{A653B06C-06D2-4F4C-9718-5A25AB1185BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="win_gingle-002" ID="{BF3DF22A-B358-4E25-857D-CBF963ECF786}" ShortID="236298001" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle-002" ID="{26E6117E-E476-429F-8AE9-37DF682F9703}" ShortID="987915798">
+											<Language>SFX</Language>
+											<AudioFile>win_gingle-002.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle-002" ID="{26E6117E-E476-429F-8AE9-37DF682F9703}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="win_gingle-003" ID="{7B3B8201-0087-494E-9F8F-8FEB36807F01}" ShortID="828057711" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle-003" ID="{86B9B876-311E-4078-8C17-23EF7A1B6A53}" ShortID="1018980032">
+											<Language>SFX</Language>
+											<AudioFile>win_gingle-003.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle-003" ID="{86B9B876-311E-4078-8C17-23EF7A1B6A53}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="win_gingle-004" ID="{6DD9AAE5-B088-4132-AC1A-D27CAC7C9CFB}" ShortID="953729659" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle-004" ID="{17A91E40-55DF-44A8-B98C-DE08E7590963}" ShortID="34395062">
+											<Language>SFX</Language>
+											<AudioFile>win_gingle-004.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle-004" ID="{17A91E40-55DF-44A8-B98C-DE08E7590963}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="win_gingle-005" ID="{A63904BA-E516-48E2-95E3-F8ADDF3D7C51}" ShortID="222255353" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle-005" ID="{DCB7FC72-9620-4FFA-97CC-56D93A07BD9A}" ShortID="837639132">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.23949366013072"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>win_gingle-005.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle-005" ID="{DCB7FC72-9620-4FFA-97CC-56D93A07BD9A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="win_gingle-006" ID="{4448C65E-C05A-4B6D-96C9-CAB16214994F}" ShortID="729874019" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle-006" ID="{946F34F9-5AF1-4156-89E4-ACB365CAEE76}" ShortID="58330578">
+											<Language>SFX</Language>
+											<AudioFile>win_gingle-006.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle-006" ID="{946F34F9-5AF1-4156-89E4-ACB365CAEE76}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<RandomSequenceContainer Name="RandomMap" ID="{AC21F947-FCAB-44CE-BA33-2247A9582B2F}" ShortID="286677086">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>10.5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C1C58E91-E768-41B9-A45F-7E31EB1EACB7}">
+										<PropertyList>
+											<Property Name="Min" Type="Real64" Value="-15"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Duduk" ID="{7389A33F-98B3-4046-989A-95E08FD1897C}" ShortID="79622331">
+							<PropertyList>
+								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{132A3760-D6AE-402D-8C24-A9D9EB7B50D7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="12"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="duduk_map_random" ID="{EC4FE4FE-5090-47C7-8079-F0CBA1EDF684}" ShortID="541265968" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random" ID="{04BD1E75-A69E-4BE3-BCEB-8B261DF77441}" ShortID="760989643">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="5.00131767973856"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random" ID="{04BD1E75-A69E-4BE3-BCEB-8B261DF77441}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-001" ID="{B2B51856-9A64-42A8-A65E-5DD92ED0475D}" ShortID="164425722" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-001" ID="{BB4D99F6-BCD5-4001-BE5F-14E16372A578}" ShortID="860899182">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="6.09727808779762"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-001" ID="{BB4D99F6-BCD5-4001-BE5F-14E16372A578}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-002" ID="{22D9CF47-D51E-4857-ADB6-7863E8AC1D29}" ShortID="328394506" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-002" ID="{98111032-338C-4A91-8115-3D8C0AEF99FB}" ShortID="784716256">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="5.77510149274554"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-002.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-002" ID="{98111032-338C-4A91-8115-3D8C0AEF99FB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-003" ID="{67CDBD8B-62BC-4F46-81DE-63DBB8F5BCB5}" ShortID="182137577" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-003" ID="{1E471C24-FF7D-4113-82F9-7E5B01BBCDBC}" ShortID="834714053">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="4.41990443638393"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-003.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-003" ID="{1E471C24-FF7D-4113-82F9-7E5B01BBCDBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-004" ID="{F26A7673-0D09-4881-A90A-46EB74D3C83A}" ShortID="957231947" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-004" ID="{4AB56D8E-C6EC-4FDD-822D-0F9740C6BC0F}" ShortID="271346941">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="5.00535295758929"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-004.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-004" ID="{4AB56D8E-C6EC-4FDD-822D-0F9740C6BC0F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-005" ID="{23F5E6A5-A995-4CCB-9F29-89A8A53C3B2C}" ShortID="367235298" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-005" ID="{853A4E14-E028-47E4-BBE4-0FF1023355A3}" ShortID="665885584">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="6.99940345982143"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-005.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-005" ID="{853A4E14-E028-47E4-BBE4-0FF1023355A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-006" ID="{BB647AA6-6D18-4CDD-B478-58C8F340598D}" ShortID="1008648703" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-006" ID="{E095C0DD-5B91-4DA3-AC47-7F6679FD782C}" ShortID="392677452">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="6.99717764136905"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-006.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-006" ID="{E095C0DD-5B91-4DA3-AC47-7F6679FD782C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-007" ID="{32C89CDB-2B81-42B5-8332-5A6D4F9DC313}" ShortID="1064898123" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-007" ID="{62BE5859-1F27-4922-A826-8DD4B178B6FC}" ShortID="1055265316">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="5.53322693452381"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-007.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-007" ID="{62BE5859-1F27-4922-A826-8DD4B178B6FC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-008" ID="{355EC133-B9C8-4573-B0E6-9D267169F241}" ShortID="595672792" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-008" ID="{92DB3DC3-E259-47D9-A086-5E36532EDFAB}" ShortID="624002234">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="7.02673442150298"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-008.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-008" ID="{92DB3DC3-E259-47D9-A086-5E36532EDFAB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{93195168-8549-4277-AB51-8F58D21850A2}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-37.375"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Guit" ID="{6E5A92F2-6D78-4597-B8F0-16CC1870DCA4}" ShortID="571227361">
+							<PropertyList>
+								<Property Name="EnablePanner" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="win_gingle-001" ID="{1E01F3A0-3131-4E68-AA5E-B2D62FF0C2D9}" ShortID="910089196" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle-001" ID="{78EED6AC-1B9D-44ED-AB7D-188A131FF98A}" ShortID="25096508">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.573609411764706"/>
+												<Property Name="LoopEnd" Type="Real64" Value="4.4849375"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>win_gingle-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle-001" ID="{78EED6AC-1B9D-44ED-AB7D-188A131FF98A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="win_gingle-003" ID="{08325AC9-56AF-4A33-822B-1C41872775C0}" ShortID="639509368" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="win_gingle-003" ID="{650F0499-DBF7-47E7-99A7-A93AD64FDA80}" ShortID="626324346">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="3.85361104910714"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>win_gingle-003.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1018980032"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="win_gingle-003" ID="{650F0499-DBF7-47E7-99A7-A93AD64FDA80}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="map_random" ID="{008ADB0E-43EA-45B2-99F8-A4FE1C4AC04F}" ShortID="118029124" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="map_random" ID="{21C4034D-CE3D-4BFC-9C16-2D37EA8858C6}" ShortID="615904022">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="3.59679045758929"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>map_random.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="map_random" ID="{21C4034D-CE3D-4BFC-9C16-2D37EA8858C6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="map_random-001" ID="{5903F3F0-54E7-41B8-B8FD-F39EF45F0A7A}" ShortID="1021529058" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="map_random-001" ID="{8B44EE25-6535-48E3-B353-B9DB317842F6}" ShortID="187197840">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.3771362745098"/>
+												<Property Name="LoopEnd" Type="Real64" Value="2.99836728050595"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>map_random-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="map_random-001" ID="{8B44EE25-6535-48E3-B353-B9DB317842F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{B66670CC-042D-42AA-80D2-CFAB61DB0331}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="33.4"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+						</RandomSequenceContainer>
+					</ChildrenList>
+					<Playlist>
+						<ItemRef Name="Duduk" ID="{7389A33F-98B3-4046-989A-95E08FD1897C}"/>
+						<ItemRef Name="Guit" ID="{6E5A92F2-6D78-4597-B8F0-16CC1870DCA4}"/>
+					</Playlist>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
