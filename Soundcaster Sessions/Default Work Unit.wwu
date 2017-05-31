@@ -42,7 +42,7 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_punch_hit" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<ObjectRef Name="Play_sunbather_hit" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
@@ -300,7 +300,7 @@
 							<Position X="6" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_punch_hit" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<ObjectRef Name="Play_sunbather_hit" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="6" Y="1"/>
 						</Module>
 						<Module>
