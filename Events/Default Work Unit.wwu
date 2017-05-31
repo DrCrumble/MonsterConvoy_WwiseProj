@@ -376,6 +376,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_DragonTalk" ID="{513DA147-17A5-496A-A427-82B853CFE5D1}">
+							<ChildrenList>
+								<Action Name="Play" ID="{67460185-FE47-4D26-B936-DB0E9E07A41F}" ShortID="694973655" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9642DEED-75C0-47B8-B464-7DD48C501BFF}" Global="false">
+											<ObjectRef Name="DragonTalk" ID="{16E4FE96-13E3-4B7D-B65C-6EEAAEF9F5CC}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FEAR" ID="{AED10A36-97C9-4239-8E32-0AA835465915}" ShortID="523971026">
