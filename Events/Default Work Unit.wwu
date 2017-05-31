@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Event Name="Play_FightMusic" ID="{CD7F8872-14BF-458F-9CDB-D868C50D7CFA}">
 					<ChildrenList>
-						<Action Name="Stop All" ID="{5BD2BC18-E849-408C-8092-6BF92706B1A0}" ShortID="176262211" Type="Stop" Scope="All" Global="false"/>
+						<Action Name="Stop All" ID="{5BD2BC18-E849-408C-8092-6BF92706B1A0}" ShortID="176262211" Type="Stop" Scope="All" Global="true"/>
 						<Action Name="Play" ID="{872AB862-A828-44CC-94AB-0F7641E3F266}" ShortID="641580963" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{55CFFA66-F3D7-4362-81B2-1BD511AC7C07}" Global="false">
@@ -13,16 +13,16 @@
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Reset Voice Low-pass Filter" ID="{691EF38F-ABE6-444E-A77D-D37FC243F5A6}" ShortID="864490537" Type="ResetLPF" Scope="One" Global="false">
+						<Action Name="Reset Voice Low-pass Filter" ID="{691EF38F-ABE6-444E-A77D-D37FC243F5A6}" ShortID="864490537" Type="ResetLPF" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{3648990D-84BF-44DE-849B-746AC8832BBC}" Global="false">
+								<Element ID="{3648990D-84BF-44DE-849B-746AC8832BBC}" Global="true">
 									<ObjectRef Name="AMB" ID="{4388216E-4FE4-45EC-950E-7E6C651A0106}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
 								</Element>
 							</ElementList>
 						</Action>
-						<Action Name="Reset Voice Volume" ID="{ACF06559-8EF0-4DF9-8878-BF60C7AEE777}" ShortID="366760114" Type="ResetVolume" Scope="One" Global="false">
+						<Action Name="Reset Voice Volume" ID="{ACF06559-8EF0-4DF9-8878-BF60C7AEE777}" ShortID="366760114" Type="ResetVolume" Scope="One" Global="true">
 							<ElementList>
-								<Element ID="{C84F4457-5870-45F9-93DA-C0218DAF2FCB}" Global="false">
+								<Element ID="{C84F4457-5870-45F9-93DA-C0218DAF2FCB}" Global="true">
 									<ObjectRef Name="AMB" ID="{4388216E-4FE4-45EC-950E-7E6C651A0106}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
 								</Element>
 							</ElementList>
