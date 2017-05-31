@@ -2238,6 +2238,35 @@
 								<ActiveSource Name="arrow_hit" ID="{A19588B7-9D6A-4B40-AD7E-E4BFB4B93689}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="dagger_hit_cannibal" ID="{A1198206-5291-44C8-A286-90CC0EF3F46F}" ShortID="1007241263" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="dagger_hit" ID="{3FA6C256-E146-4B53-A2E7-67ACD423C710}" ShortID="436972332">
+									<Language>SFX</Language>
+									<AudioFile>dagger_hit.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="198955501"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="dagger_hit" ID="{3FA6C256-E146-4B53-A2E7-67ACD423C710}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Misc" ID="{EF21184F-CCB1-4A20-B2DB-87336A2A16CE}" ShortID="109005886">

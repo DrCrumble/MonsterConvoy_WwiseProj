@@ -31,7 +31,17 @@
 				</Event>
 				<Event Name="Play_CannibalAttack" ID="{D216A660-69CF-4E6B-9FB7-6ECD3C0BA207}">
 					<ChildrenList>
+						<Action Name="Play" ID="{64572ED3-A9AD-48A9-84E0-1E5FAB5D8B51}" ShortID="937114019" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{3A34D3B4-8616-45EA-AD7A-90115EFE4562}" Global="false">
+									<ObjectRef Name="dagger_hit" ID="{E43993AF-5AB2-49C1-8524-90F0A1718020}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
 						<Action Name="Play" ID="{E8796788-ED96-431C-9CC4-B2FE5EFE0E16}" ShortID="933417413" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.3"/>
+							</PropertyList>
 							<ElementList>
 								<Element ID="{6DA853D9-9849-4E25-9E7F-ABDD6E9152F4}" Global="false">
 									<ObjectRef Name="CannibalAttack" ID="{E8A72EC6-2E21-4F50-8E07-8F336F5A526E}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
@@ -583,17 +593,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="CombatLose" ID="{4E708E44-CDBE-4EC6-9739-C33EE816EB0E}">
-					<ChildrenList>
-						<Action Name="Stop" ID="{00CF8424-D928-4B0C-A32F-F715AF460144}" ShortID="925489592" Type="Stop" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{27B310DD-1B19-4D46-922C-22F7FDBE6C2D}" Global="false">
-									<ObjectRef Name="FightMusic" ID="{EE0F5767-6F32-4245-A824-8E8B2E64C15A}" WorkUnitID="{9B222E70-3A7B-4D5F-BFC8-0E1857391669}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_flee" ID="{35821EF6-AD59-47D1-9EBF-BDD8D51988F0}">
 					<ChildrenList>
 						<Action Name="Play" ID="{12EF705C-9DB7-489B-B231-B837F7230014}" ShortID="1061717597" Type="Play" Scope="One" Global="false">
@@ -640,7 +639,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Hits" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}">
+						<Event Name="Play_punch_hit" ID="{5974F513-2716-4E01-BEE5-C2ADEC2B9721}">
 							<ChildrenList>
 								<Action Name="Play" ID="{7DB053A9-4DC7-462B-BF64-09931CE6493F}" ShortID="547136807" Type="Play" Scope="One" Global="false">
 									<ElementList>
@@ -697,6 +696,47 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="CombatLose" ID="{18E5CDF1-55FD-4B1E-9C2D-D3CAE513EBE4}">
+					<ChildrenList>
+						<Action Name="Stop" ID="{E44A2D8B-BC66-4C62-A207-46A2E4D754EF}" ShortID="627652100" Type="Stop" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{7504F927-E9F9-4DDF-AF45-340ED5FAADC3}" Global="false">
+									<ObjectRef Name="FightMusic" ID="{EE0F5767-6F32-4245-A824-8E8B2E64C15A}" WorkUnitID="{9B222E70-3A7B-4D5F-BFC8-0E1857391669}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Set Voice Low-pass Filter" ID="{57F4E98C-66C4-4C61-89B8-7963899080D6}" ShortID="1734968" Type="ChangeLPF" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16" Value="45"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{C028FFE9-330C-4095-AADE-363FC5AEB997}" Global="false">
+									<ObjectRef Name="AMB" ID="{4388216E-4FE4-45EC-950E-7E6C651A0106}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Set Voice Volume" ID="{E5C6A7AF-1DBD-4A82-BB16-B1CB39177FDE}" ShortID="298298252" Type="ChangeVolume" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64" Value="-22"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{B178776D-7B1C-4554-AFF7-08A756CF4BE3}" Global="false">
+									<ObjectRef Name="AMB" ID="{4388216E-4FE4-45EC-950E-7E6C651A0106}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{73D63445-D11D-4F83-A899-02719E67B04F}" ShortID="559805970" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CEBE7D03-6199-44E2-84F9-207619443406}" Global="false">
+									<ObjectRef Name="RandomMap" ID="{AC21F947-FCAB-44CE-BA33-2247A9582B2F}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
