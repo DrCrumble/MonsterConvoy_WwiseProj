@@ -26,10 +26,6 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="DEPART" ID="{931BA9DF-B253-4A34-B0D3-9C75EF845AA9}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="MONTAGNE" ID="{79AC4C40-C4AA-42B3-AC2B-22C3F37EFA61}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="1" Y="2"/>
 						</Module>
@@ -172,7 +168,7 @@
 							<Position X="1" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="DEPART" ID="{931BA9DF-B253-4A34-B0D3-9C75EF845AA9}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<ObjectRef Name="DEPART" ID="{CB7DDECE-A898-456D-823E-A6923F61DAC7}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="1" Y="5"/>
 						</Module>
 						<Module>
@@ -356,7 +352,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="T2" ID="{309E7343-A73B-47CC-96F4-39B5F144ED79}"/>
+						<CurrentSwitchRef Name="T4" ID="{16485E72-F444-4BFC-9504-D280E8872D93}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
