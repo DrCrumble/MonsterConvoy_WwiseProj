@@ -2987,6 +2987,139 @@
 										<ActiveSource Name="MageTuto-005" ID="{75DCD932-5E6F-4581-8EB9-6216D6732F0E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="MageTuto-006" ID="{9F8E224F-DD41-4869-B646-D54961BDCEAB}" ShortID="272411885" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-006" ID="{BA05769A-049F-496B-B28B-842CBC8A6E60}" ShortID="595365469">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-006.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-006" ID="{BA05769A-049F-496B-B28B-842CBC8A6E60}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-007" ID="{27457126-375A-4032-AD32-A6219CB87332}" ShortID="349108430" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-007" ID="{D7E4C21A-1ECD-4C1F-8B9D-FAFF63491476}" ShortID="940732522">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-007.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-007" ID="{D7E4C21A-1ECD-4C1F-8B9D-FAFF63491476}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-008" ID="{7C90D60D-6D04-4952-988E-4C70F735FC5E}" ShortID="461765967" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-008" ID="{DFC6FA9E-CE05-4D43-B3F5-71E91D85ADF4}" ShortID="469234562">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-008.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-008" ID="{DFC6FA9E-CE05-4D43-B3F5-71E91D85ADF4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-009" ID="{2AE6DE30-2B98-49A0-8E4F-DF572871EC34}" ShortID="619365109" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-009" ID="{3909E55B-E68A-4163-BD8A-A4CBDC6B8BB2}" ShortID="512601430">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-009.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-009" ID="{3909E55B-E68A-4163-BD8A-A4CBDC6B8BB2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-010" ID="{8F72D941-2F1D-4170-9F48-CC782E561B91}" ShortID="691927956" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-010" ID="{4FB5B977-8AD8-441A-ACB8-82B8A8F38F06}" ShortID="649653916">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-010.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-010" ID="{4FB5B977-8AD8-441A-ACB8-82B8A8F38F06}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-011" ID="{CF863CB2-59A5-4EBF-B702-57C886496C79}" ShortID="720347021" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-011" ID="{EC391BD2-8849-4589-A511-266FEA1677FF}" ShortID="894794662">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-011.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-011" ID="{EC391BD2-8849-4589-A511-266FEA1677FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="MageTuto-012" ID="{1E61060B-4528-4670-AE77-01AC6EBA5781}" ShortID="992136349" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="MageTuto-012" ID="{1ADC94F3-9A75-4E42-9B9C-CEFE76857196}" ShortID="137425433">
+											<Language>SFX</Language>
+											<AudioFile>MageTuto-012.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="MageTuto-012" ID="{1ADC94F3-9A75-4E42-9B9C-CEFE76857196}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
