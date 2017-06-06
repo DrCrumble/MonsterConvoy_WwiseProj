@@ -300,7 +300,7 @@
 							<Position X="6" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_MageTuto" ID="{F9C9D8B8-1DCE-4B31-8E1A-1E541FD46F20}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<ObjectRef Name="Play_TutoMage" ID="{F9C9D8B8-1DCE-4B31-8E1A-1E541FD46F20}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="6" Y="2"/>
 						</Module>
 						<Module>

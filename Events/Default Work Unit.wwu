@@ -55,7 +55,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_MageTuto" ID="{F9C9D8B8-1DCE-4B31-8E1A-1E541FD46F20}">
+				<Event Name="Play_TutoMage" ID="{F9C9D8B8-1DCE-4B31-8E1A-1E541FD46F20}">
 					<ChildrenList>
 						<Action Name="Play" ID="{22301C1A-B28A-4154-8B84-9133C224DB4E}" ShortID="454671289" Type="Play" Scope="One" Global="false">
 							<ElementList>
