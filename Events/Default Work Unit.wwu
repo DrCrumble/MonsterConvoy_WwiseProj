@@ -618,6 +618,9 @@
 							</ElementList>
 						</Action>
 						<Action Name="Play" ID="{F7C0D311-95F6-46BC-82EF-2246A914F82B}" ShortID="491900628" Type="Play" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="6"/>
+							</PropertyList>
 							<ElementList>
 								<Element ID="{8697D9A5-00F4-4DEC-BF06-7B23E59103F9}" Global="false">
 									<ObjectRef Name="RandomMap" ID="{AC21F947-FCAB-44CE-BA33-2247A9582B2F}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>

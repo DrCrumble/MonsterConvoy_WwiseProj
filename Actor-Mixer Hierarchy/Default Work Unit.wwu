@@ -5297,13 +5297,6 @@
 				<Folder Name="Gingles" ID="{6377D917-533E-4750-BAEE-CA33FBBCF5D4}" ShortID="546947347">
 					<ChildrenList>
 						<RandomSequenceContainer Name="Win" ID="{7EB275F3-EE55-4E60-BDE0-FE9C6DD537E8}" ShortID="581941019">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-3</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
@@ -5455,11 +5448,6 @@
 				</Folder>
 				<RandomSequenceContainer Name="RandomMap" ID="{AC21F947-FCAB-44CE-BA33-2247A9582B2F}" ShortID="286677086">
 					<PropertyList>
-						<Property Name="InitialDelay" Type="Real64">
-							<ValueList>
-								<Value>7</Value>
-							</ValueList>
-						</Property>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
