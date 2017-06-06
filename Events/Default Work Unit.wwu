@@ -1049,6 +1049,27 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Map" ID="{05BAD6A4-86F0-42B3-8667-F82A38EB417B}">
+					<ChildrenList>
+						<Action Name="Play" ID="{BE8E0496-BE5B-437B-B870-91A5620E3077}" ShortID="615272545" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{673AC4C6-416E-43C8-AD4C-CCA6058D06B4}" Global="false">
+									<ObjectRef Name="RandomMap" ID="{AC21F947-FCAB-44CE-BA33-2247A9582B2F}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Set Voice Volume" ID="{997F96B0-B327-46FD-85CA-534DF5CEE6D1}" ShortID="649033498" Type="ChangeVolume" Scope="One" Global="false">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64" Value="-4"/>
+							</PropertyList>
+							<ElementList>
+								<Element ID="{C7EAF364-69E2-4C88-8EB4-DCC84136BE9E}" Global="false">
+									<ObjectRef Name="amb_capitale" ID="{01BFE2A0-FED8-4F3E-B8B7-492CA80E9C53}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
