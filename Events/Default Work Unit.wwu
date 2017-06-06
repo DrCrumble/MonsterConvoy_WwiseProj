@@ -815,6 +815,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_merchant_hit" ID="{6D074766-53C6-41BE-B1C8-AB18521ACB8E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{5CA31051-71B8-4E63-90D7-38CAF6FBC657}" ShortID="101014093" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{071B6087-389D-43BB-AF67-E0F111695A13}" Global="false">
+											<ObjectRef Name="Hits" ID="{C197DD68-E7F0-4933-ACF7-E87F60B3AFBB}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="CombatLose" ID="{18E5CDF1-55FD-4B1E-9C2D-D3CAE513EBE4}">
@@ -1019,6 +1030,17 @@
 								<Action Name="Play" ID="{A6B67B0A-8F4E-4A97-AB82-47EF6D125C71}" ShortID="991737278" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{1DF88D18-19B7-4159-844D-D1B0914C686E}" Global="false">
+											<ObjectRef Name="punch_crit" ID="{EB42210F-476F-4FEC-BD4C-8317831B59E0}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_merchant_crit" ID="{1013AD47-AFA4-42F2-9E66-1892BD6C5335}">
+							<ChildrenList>
+								<Action Name="Play" ID="{05B2C3CF-C6E9-4B56-B60C-D3DC09B9940A}" ShortID="813564732" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{CF6012CA-EE2B-4B33-B858-1565E25619DC}" Global="false">
 											<ObjectRef Name="punch_crit" ID="{EB42210F-476F-4FEC-BD4C-8317831B59E0}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
 										</Element>
 									</ElementList>
