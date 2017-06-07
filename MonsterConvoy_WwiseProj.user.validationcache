@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3327941356" DateHigh="30596811"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1819296235" DateHigh="30596827"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Actor-Mixer Hierarchy\Factory SoundSeed Air Objects.wwu" DateLow="418567577" DateHigh="30583284"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Actor-Mixer Hierarchy\Factory Synth One.wwu" DateLow="422570236" DateHigh="30583284"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Attenuations\Default Work Unit.wwu" DateLow="2826395865" DateHigh="30583368"/>
@@ -27,8 +27,8 @@
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3689377230" DateHigh="30596807"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Mixing Sessions\Default Work Unit.wwu" DateLow="3909884250" DateHigh="30596626"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Modulators\Default Work Unit.wwu" DateLow="2826545965" DateHigh="30583368"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\MonsterConvoy_WwiseProj.user.wsettings" DateLow="4113928425" DateHigh="30596782"/>
-	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\MonsterConvoy_WwiseProj.wproj" DateLow="334895795" DateHigh="30585968"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\MonsterConvoy_WwiseProj.user.wsettings" DateLow="177718394" DateHigh="30596838"/>
+	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\MonsterConvoy_WwiseProj.wproj" DateLow="864491507" DateHigh="30596833"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Presets\Default Work Unit.wwu" DateLow="2826811130" DateHigh="30583368"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Queries\Default Work Unit.wwu" DateLow="2826911196" DateHigh="30583368"/>
 	<ValidationCacheItem File="C:\Users\user\Documents\MonsterConvoyWwiseProj\Queries\Factory Queries.wwu" DateLow="419298059" DateHigh="30583284"/>

@@ -2266,6 +2266,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="sword_hit" ID="{42F8E880-DCED-4254-B802-3341B683731C}" ShortID="1071780485">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="3.79832352941177E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.540808921568628"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>sword_hit.wav</AudioFile>
 										</AudioFileSource>
@@ -2436,8 +2440,16 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="dagger_hit" ID="{39F991F5-A16C-4242-8DAA-CBBD318C08C3}" ShortID="198955501">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="8.25008496732026E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.139892745098039"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.312965179738562"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>dagger_hit.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="436972332"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
@@ -2564,6 +2576,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="dagger_crit" ID="{48580EA8-F548-452C-ACD7-08D308E1785D}" ShortID="931063321">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="5.88371732026144E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.358066225490196"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>dagger_crit.wav</AudioFile>
 										</AudioFileSource>
@@ -2583,6 +2599,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="sword_crit" ID="{BA52C67C-CAEB-49B8-9C37-31415A3DA3D1}" ShortID="576140675">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.046674705882353"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.541945196078432"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>sword_crit.wav</AudioFile>
 										</AudioFileSource>
