@@ -1073,6 +1073,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_PlantFear" ID="{881BBC6A-A8EA-4BA7-9C1D-D7D3DD98F09D}">
+					<ChildrenList>
+						<Action Name="Play" ID="{C2332F3C-FD99-4C5B-A6F3-D73B203B34AB}" ShortID="837699781" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{E565FD61-897E-4072-99DD-9CDF4B9C3B46}" Global="false">
+									<ObjectRef Name="PlantFear" ID="{20DFF7F7-3BDC-46BE-A8BD-F1984555D18A}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlantTalk" ID="{48525DE9-FE40-4E78-AEEE-93F1364F4C76}">
+					<ChildrenList>
+						<Action Name="Play" ID="{FA7C3A25-EDC9-4EE1-8F35-219DABC5B578}" ShortID="342933587" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CD01710C-777B-4158-BBBF-9105359B476C}" Global="false">
+									<ObjectRef Name="PlantTalk" ID="{B6493933-C383-4AD5-B9FE-F52490D999B7}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
