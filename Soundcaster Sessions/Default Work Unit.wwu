@@ -352,7 +352,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="T4" ID="{16485E72-F444-4BFC-9504-D280E8872D93}"/>
+						<CurrentSwitchRef Name="T1" ID="{26E97B99-A16F-4656-A704-466D0F9DC2C1}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
