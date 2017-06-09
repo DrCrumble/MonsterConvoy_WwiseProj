@@ -212,7 +212,7 @@
 								<Action Name="Play" ID="{66DFC25B-5179-4860-9102-3116F2184794}" ShortID="193676278" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{09D74539-75A1-412B-AAA3-382B47907EC8}" Global="false">
-											<ObjectRef Name="amb_capitale" ID="{331872A7-295E-4B16-A62D-9B76614A4802}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+											<ObjectRef Name="amb_capitale" ID="{D52F1A27-BBB6-44FD-891B-CF163CD4C41E}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
 										</Element>
 									</ElementList>
 								</Action>
