@@ -1694,6 +1694,405 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<ActorMixer Name="BardTalk" ID="{514856E8-2429-439D-ACCC-E1864CB29545}" ShortID="257548611">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Bardsing" ID="{EF9C0DBD-61D6-4FD2-9168-54BDE38B86BF}" ShortID="257157303">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="MonsterSFX" ID="{AA525740-3F86-49B7-BD0C-F2D89E710120}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="bard_sing" ID="{5C42E999-4C87-4393-9E50-8B21FFA4D957}" ShortID="597942326" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing" ID="{F687C385-62BC-4D90-A673-55F50FE5B76D}" ShortID="910687609">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing" ID="{F687C385-62BC-4D90-A673-55F50FE5B76D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-001" ID="{52DC73A7-7470-455D-AD42-08E371209624}" ShortID="219476619" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-001" ID="{FC12F529-E18D-4BA0-9CFF-2C67766DD596}" ShortID="641960127">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-001.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-001" ID="{FC12F529-E18D-4BA0-9CFF-2C67766DD596}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-002" ID="{C4AED40E-82AD-4403-8746-00FC45880AD5}" ShortID="681307947" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-002" ID="{401AB3BC-B241-470C-B71C-1FFFF3D78D44}" ShortID="205944736">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-002.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-002" ID="{401AB3BC-B241-470C-B71C-1FFFF3D78D44}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-003" ID="{211A5160-3899-4871-A96F-49C7E4E4B37D}" ShortID="841924323" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-003" ID="{B2F903EA-4D42-4A1B-AD22-4D8B40E60210}" ShortID="115363755">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-003.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-003" ID="{B2F903EA-4D42-4A1B-AD22-4D8B40E60210}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-004" ID="{82F05BBA-7775-4176-88E8-0D0A1619F43B}" ShortID="673368381" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-004" ID="{0B247C6D-9E1C-46CF-942A-62FFFCF62769}" ShortID="181177928">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-004.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-004" ID="{0B247C6D-9E1C-46CF-942A-62FFFCF62769}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-005" ID="{BD6EF56B-03A8-4ACC-94E9-8DEEC9EB7818}" ShortID="827434524" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-005" ID="{54A254F2-F7F4-42D3-9E09-C6D7738CE837}" ShortID="503206509">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-005.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-005" ID="{54A254F2-F7F4-42D3-9E09-C6D7738CE837}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-006" ID="{1931B19D-2DB3-4B8E-BC20-098F6CC73470}" ShortID="415455811" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-006" ID="{8618F4F2-0AA7-457A-8266-169F89EFCFC9}" ShortID="83353526">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-006.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-006" ID="{8618F4F2-0AA7-457A-8266-169F89EFCFC9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-007" ID="{38DA79C6-9539-4727-8882-9038F899CE62}" ShortID="847222146" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-007" ID="{0535BF82-8BC9-45FF-83AE-BF41E8880632}" ShortID="123102544">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-007.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-007" ID="{0535BF82-8BC9-45FF-83AE-BF41E8880632}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-008" ID="{A26511C1-9290-45DC-B4FA-AD4A1A3E6B6A}" ShortID="935239040" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-008" ID="{6DF7FB20-3972-4171-983B-222588D41D33}" ShortID="490557497">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-008.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-008" ID="{6DF7FB20-3972-4171-983B-222588D41D33}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="bard_sing-009" ID="{5A0EE897-DD06-49A0-96CA-D82FB117ECEC}" ShortID="698478264" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="bard_sing-009" ID="{4A8AFD20-80D3-4850-A914-5BCD221E10FC}" ShortID="421170522">
+															<Language>SFX</Language>
+															<AudioFile>bard_sing-009.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="bard_sing-009" ID="{4A8AFD20-80D3-4850-A914-5BCD221E10FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="BardUki" ID="{46C7A6E2-BEB1-4CF4-8716-59D176A7F7AC}" ShortID="362277972">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="uki_bard" ID="{6E4E47EC-3714-42FF-A181-930BCA6CF1ED}" ShortID="1027018316" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="uki_bard" ID="{62A39828-3E36-4EC8-B39F-A63E83E335BA}" ShortID="903218708">
+															<Language>SFX</Language>
+															<AudioFile>uki_bard.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="uki_bard" ID="{62A39828-3E36-4EC8-B39F-A63E83E335BA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="uki_bard-001" ID="{32541B27-425E-49F7-A8F3-4CB7BDD9EBA9}" ShortID="488014850" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="uki_bard-001" ID="{DBD34F7A-0452-4410-AF68-7C761812817C}" ShortID="388559738">
+															<Language>SFX</Language>
+															<AudioFile>uki_bard-001.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="uki_bard-001" ID="{DBD34F7A-0452-4410-AF68-7C761812817C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="uki_bard-002" ID="{7DFC6FF5-5A1C-4861-9B35-E3B2D534F77C}" ShortID="326306208" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="uki_bard-002" ID="{C884FA18-1E95-47F6-8210-59C111CEE7A5}" ShortID="559240867">
+															<Language>SFX</Language>
+															<AudioFile>uki_bard-002.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="uki_bard-002" ID="{C884FA18-1E95-47F6-8210-59C111CEE7A5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="uki_bard-003" ID="{F8778DDF-D52E-42CE-8E84-0482B3307692}" ShortID="399827075" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="uki_bard-003" ID="{97695F3A-0DD6-4909-8653-267254A88CEE}" ShortID="144710058">
+															<Language>SFX</Language>
+															<AudioFile>uki_bard-003.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="uki_bard-003" ID="{97695F3A-0DD6-4909-8653-267254A88CEE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="uki_bard-004" ID="{0D4DC5FA-D12F-4614-96CA-5839E8964EC0}" ShortID="20768955" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="uki_bard-004" ID="{2ACD39E8-48A6-4C65-9FCE-397A22B799A5}" ShortID="182037539">
+															<Language>SFX</Language>
+															<AudioFile>uki_bard-004.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="uki_bard-004" ID="{2ACD39E8-48A6-4C65-9FCE-397A22B799A5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="uki_bard-005" ID="{A6AB4AF7-709E-484A-8B7E-A22699F50E2D}" ShortID="518939012" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="uki_bard-005" ID="{71C89B7D-869F-46BD-9DC5-1BC98F6D8D36}" ShortID="515939353">
+															<Language>SFX</Language>
+															<AudioFile>uki_bard-005.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="uki_bard-005" ID="{71C89B7D-869F-46BD-9DC5-1BC98F6D8D36}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="uki_bard-006" ID="{0F5A42E1-106E-4E8F-BF84-79A847070847}" ShortID="791051878" Type="SoundFX">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="uki_bard-006" ID="{88CCE1D7-3C32-46BE-B7E2-2C47788E83FB}" ShortID="841829901">
+															<Language>SFX</Language>
+															<AudioFile>uki_bard-006.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="uki_bard-006" ID="{88CCE1D7-3C32-46BE-B7E2-2C47788E83FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

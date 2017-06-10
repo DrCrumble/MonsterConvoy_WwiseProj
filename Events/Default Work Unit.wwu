@@ -420,6 +420,24 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_BardTalk" ID="{A1CCD166-AFA4-4CC9-9E8C-2D4FCF95CE1C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C1183ADD-941A-4A1D-894B-4FB4A57D5A53}" ShortID="780747676" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E1792EEC-893E-4D3F-9235-73CDE666ECE4}" Global="false">
+											<ObjectRef Name="Bardsing" ID="{EF9C0DBD-61D6-4FD2-9168-54BDE38B86BF}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{FE4E66C0-48AB-443E-AAF8-6FC039FAE604}" ShortID="941123339" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{284B1A23-D7AE-4E12-8080-323A7F0424C9}" Global="false">
+											<ObjectRef Name="BardUki" ID="{46C7A6E2-BEB1-4CF4-8716-59D176A7F7AC}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="FEAR" ID="{AED10A36-97C9-4239-8E32-0AA835465915}" ShortID="523971026">
