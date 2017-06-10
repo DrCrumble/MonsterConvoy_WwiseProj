@@ -6097,6 +6097,240 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="gingle_horns" ID="{8BF5D8A6-1C98-43C4-9B66-7EB3501B2CC3}" ShortID="642000147" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="gingle_horns" ID="{33E05142-FC04-4C55-B5BB-C61D7981B568}" ShortID="70993932">
+									<PropertyList>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gingle_horns.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="gingle_horns" ID="{33E05142-FC04-4C55-B5BB-C61D7981B568}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="WinDuduk" ID="{C27EE9B7-F434-4D14-AB98-0F44A34E4A73}" ShortID="633768424">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="duduk_map_random-002" ID="{42DC435E-FE43-41D5-A300-B23CC81E10D6}" ShortID="560047633" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-002" ID="{6341EF57-0974-491A-996C-A0B1FF096FB6}" ShortID="678438857">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="5.77510149274554"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-002.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="784716256"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-002" ID="{6341EF57-0974-491A-996C-A0B1FF096FB6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-003" ID="{F8A2EF61-E0DD-43C5-95BD-67BE1216FE5D}" ShortID="278049206" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-003" ID="{9A05B5E0-B7C1-459D-9B55-C014DACE581D}" ShortID="342734196">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="4.41990443638393"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-003.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="834714053"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-003" ID="{9A05B5E0-B7C1-459D-9B55-C014DACE581D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-004" ID="{88093663-79C2-498E-8008-62C6EC34FCCD}" ShortID="119349128" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-004" ID="{6A9A7F66-089F-47C6-B87F-C6C9CEB1F680}" ShortID="662631002">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="5.00535295758929"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-004.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="271346941"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-004" ID="{6A9A7F66-089F-47C6-B87F-C6C9CEB1F680}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-005" ID="{9891180B-97F5-49C0-A1B8-8B580FDB0996}" ShortID="744023630" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-005" ID="{6D386970-6F1D-441E-8B81-847309C48E64}" ShortID="639506208">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="6.99940345982143"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-005.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="665885584"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-005" ID="{6D386970-6F1D-441E-8B81-847309C48E64}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-006" ID="{499990AC-6AB1-4F7D-BB84-F15E270F4F3B}" ShortID="207524366" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-006" ID="{8B545FA8-A6A7-460F-96ED-257645E91AD5}" ShortID="779683652">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="6.99717764136905"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-006.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="392677452"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-006" ID="{8B545FA8-A6A7-460F-96ED-257645E91AD5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-007" ID="{E1962B32-51FC-4979-B336-02A0D797FB14}" ShortID="817261784" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-007" ID="{24736121-9419-4A38-9B50-4F37D353F686}" ShortID="683699919">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="5.53322693452381"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-007.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1055265316"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-007" ID="{24736121-9419-4A38-9B50-4F37D353F686}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="duduk_map_random-008" ID="{7C11F92C-E22A-4324-B6B7-3C512CF4F19A}" ShortID="496725122" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{7F815542-9AD3-4737-8D71-2B5DD6155BB4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4AA8F987-7F3F-43D8-AD74-D161B10B043B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="duduk_map_random-008" ID="{91FAC05A-21E9-4C14-9C02-EDEFC09C64AD}" ShortID="858727678">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="7.02673442150298"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>duduk_map_random-008.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="624002234"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="duduk_map_random-008" ID="{91FAC05A-21E9-4C14-9C02-EDEFC09C64AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<RandomSequenceContainer Name="RandomMap" ID="{AC21F947-FCAB-44CE-BA33-2247A9582B2F}" ShortID="286677086">

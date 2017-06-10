@@ -648,11 +648,32 @@
 						</Action>
 						<Action Name="Play" ID="{F7C0D311-95F6-46BC-82EF-2246A914F82B}" ShortID="491900628" Type="Play" Scope="One" Global="false">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="6"/>
+								<Property Name="Delay" Type="Real64" Value="8.5"/>
 							</PropertyList>
 							<ElementList>
 								<Element ID="{8697D9A5-00F4-4DEC-BF06-7B23E59103F9}" Global="false">
 									<ObjectRef Name="RandomMap" ID="{AC21F947-FCAB-44CE-BA33-2247A9582B2F}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{19B9359F-094D-45CB-81A7-3976614B14D1}" ShortID="438083484" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{8550C5B0-943E-4F2C-8BE6-E1578FE7A072}" Global="false">
+									<ObjectRef Name="WinDuduk" ID="{C27EE9B7-F434-4D14-AB98-0F44A34E4A73}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{0B8407F5-108D-445F-A4D3-866383B3B3A8}" ShortID="249669018" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{F4A939C8-2AE0-405A-B12D-FD55987B27C3}" Global="false">
+									<ObjectRef Name="WinDuduk" ID="{C27EE9B7-F434-4D14-AB98-0F44A34E4A73}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
+								</Element>
+							</ElementList>
+						</Action>
+						<Action Name="Play" ID="{F008798A-D9A7-4AA0-B3B5-9016DE21D66C}" ShortID="878005038" Type="Play" Scope="One" Global="false">
+							<ElementList>
+								<Element ID="{CFF70BA2-4D55-46E6-B00A-8D6C1B192ACA}" Global="false">
+									<ObjectRef Name="gingle_horns" ID="{8BF5D8A6-1C98-43C4-9B66-7EB3501B2CC3}" WorkUnitID="{70EC8B38-7F5F-472B-B654-3898255945E4}"/>
 								</Element>
 							</ElementList>
 						</Action>

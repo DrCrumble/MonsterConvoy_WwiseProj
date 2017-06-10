@@ -144,10 +144,6 @@
 							<Position X="0" Y="6"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="CombatWin" ID="{68A8F0C0-A3B1-4D8E-AC52-F4E327A2776E}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
-							<Position X="0" Y="7"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_SpiderTalk" ID="{FF3125F1-2E11-46A1-9B27-6FFF49095603}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -307,6 +303,10 @@
 							<ObjectRef Name="Play_CannibalAttack" ID="{D216A660-69CF-4E6B-9FB7-6ECD3C0BA207}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
 							<Position X="6" Y="3"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="CombatWin" ID="{68A8F0C0-A3B1-4D8E-AC52-F4E327A2776E}" WorkUnitID="{0843CC26-FA19-4AE6-B1DA-9D1BFB506A2D}"/>
+							<Position X="6" Y="4"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -352,7 +352,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="T1" ID="{26E97B99-A16F-4656-A704-466D0F9DC2C1}"/>
+						<CurrentSwitchRef Name="T2" ID="{309E7343-A73B-47CC-96F4-39B5F144ED79}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
